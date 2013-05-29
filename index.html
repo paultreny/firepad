@@ -118,7 +118,7 @@
       scriptTypes: [{ matches: /(text|application)\/(x-)?(javascript)/i,
                      mode: "javascript" }]
 		}
-    var codeMirror = CodeMirror(document.getElementById('firepad-container'), {
+    /*var codeMirror = CodeMirror(document.getElementById('firepad-container'), {
       lineNumbers: true,
       mode: mixedMode,
       tabSize: 2,
@@ -128,7 +128,7 @@
       cursorBlinkRate: 265,
       cursorScrollMargin: 2,
       flattenSpans: false
-    });
+    });*/
     var input = document.getElementById("selectTheme");
     function selectTheme() {
       var theme = input.options[input.selectedIndex].innerHTML;
@@ -143,17 +143,22 @@
 
     //var userId = Math.floor(Math.random() * 9999999999).toString();
     var userString = "";
-    var hexLetters = "ABCDEF"
-    for (var j = 0; j < 6; j++) {
-      index = Math.floor(Math.random() * 6);
-      userString += hexLetters.slice(index, ++index); }
-    document.getElementById('headerText').innerHTML = userString;
+    var hexLetters = "6789abcdef"
+    for (var i = 0; i< 150; i++) {
+      userString = ""
+      for (var j = 0; j < 6; j++) {
+        index = Math.floor(Math.random() * 9);
+        userString += hexLetters.slice(index, ++index);
+      }
+      document.getElementById('wrapper').innerHTML += '<div id=' + userString + ' style="background-color: #' + userString + '; display:inline-block; padding: 10px 5px; height: 18px; width:75px; margin: 3px; text-indent: 8px; font-family: \'Source Code Pro\', sans-serif; font-weight: 600; border-radius: 3px; box-shadow: 0px 1px 1px #777; color: #000; float:left; z-index: 100">' + userString + ' </div>';
+    }
+    //document.getElementById('headerText').innerHTML = userString;
     //// Create Firepad (with rich text features and our desired userId).
     //var userString = ("cdia" + (Math.floor(Math.random() * 9999)).toString());
     // Create Firepad.
     var firepad = Firepad.fromCodeMirror(firepadRef, codeMirror, { userId: userString });
    	// Create firepadUserList (with our desired userId).
-    var firepadUserList = FirepadUserList.fromDiv(firepadRef.child('users'),
+    /*var firepadUserList = FirepadUserList.fromDiv(firepadRef.child('users'),
       document.getElementById('userlist'), userString);
 
     firepad.on('ready', function() {
@@ -161,6 +166,7 @@
         firepad.setText("CDIA Firepad (Work in Progress...)")
       }
     });
+*/
   </script>
  <!--
   <script>
