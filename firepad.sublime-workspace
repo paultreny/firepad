@@ -1,0 +1,1362 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"div",
+				"div"
+			],
+			[
+				"mysql_fet",
+				"mysql_fetch_array"
+			],
+			[
+				"mysql_err",
+				"mysql_error"
+			],
+			[
+				"mysql",
+				"mysql_error_log"
+			],
+			[
+				"UT",
+				"UTF-8"
+			],
+			[
+				"regex",
+				"regexp"
+			],
+			[
+				"gut",
+				"gutterForeground"
+			],
+			[
+				"highli",
+				"highlight_selections"
+			],
+			[
+				"background",
+				"background/foreground"
+			],
+			[
+				"gutter",
+				"gutter_bg"
+			],
+			[
+				"mysql_connect",
+				"mysqli_connect()"
+			],
+			[
+				"title",
+				"title"
+			],
+			[
+				"require",
+				"require_once"
+			],
+			[
+				"mysql_error",
+				"mysqli_error()"
+			],
+			[
+				"mysql_num_row",
+				"mysqli_num_rows()"
+			],
+			[
+				"mysql_",
+				"mysql_num_rows"
+			],
+			[
+				"session_sta",
+				"session_start()"
+			],
+			[
+				"Trailin",
+				"TrailingSpaces"
+			],
+			[
+				"salmon",
+				"lightsalmon"
+			],
+			[
+				"laven",
+				"lavenderblush"
+			],
+			[
+				"violet",
+				"darkviolet"
+			],
+			[
+				"li",
+				"lemonchiffon"
+			],
+			[
+				"window",
+				"window	Default"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"drawIM",
+				"drawImage()	Canvas 2"
+			],
+			[
+				"border",
+				"border-style"
+			],
+			[
+				"getEle",
+				"getElementById()	Document"
+			],
+			[
+				"querySe",
+				"querySelectorAll"
+			],
+			[
+				"it",
+				"ita	CSS - font-style: italic;"
+			],
+			[
+				"getElement",
+				"getElementById()	Document"
+			],
+			[
+				"element",
+				"getElementsByClassName()"
+			],
+			[
+				"getEleme",
+				"getElementById()	Document"
+			],
+			[
+				"border-bottom",
+				"border-bottom"
+			],
+			[
+				"console_",
+				"console_write(string, prefix)	(imported, function)"
+			],
+			[
+				"st",
+				"stylesheet.css"
+			],
+			[
+				"class",
+				"class"
+			],
+			[
+				"green",
+				"green"
+			],
+			[
+				"language",
+				"language"
+			],
+			[
+				"bracket",
+				"brackethighlighter"
+			],
+			[
+				"string",
+				"string"
+			],
+			[
+				"solid",
+				"solid"
+			],
+			[
+				"accor",
+				"accordian-bostonmag.png	w:598 h:448"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"list-sty",
+				"list-style-image"
+			],
+			[
+				"haircut",
+				"haircutList"
+			],
+			[
+				"hours",
+				"hours_table"
+			],
+			[
+				"squ",
+				"square"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"bacg",
+				"background-color"
+			],
+			[
+				"Re",
+				"RewriteEngine"
+			],
+			[
+				"gray",
+				"gray_antialias"
+			],
+			[
+				"pl",
+				"pl"
+			],
+			[
+				"widt",
+				"width"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"hr",
+				"href"
+			],
+			[
+				"blink",
+				"blink"
+			],
+			[
+				"focus",
+				":focus"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"cen",
+				"center"
+			],
+			[
+				"blue",
+				"darkblue"
+			],
+			[
+				"Arial",
+				"Verdana, Geneva, Arial, Helvetica, sans-serif"
+			],
+			[
+				"eee",
+				"eee"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 7320,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/JSLint/JSLint.sublime-build",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"htmlenti",
+				"StringEncode: HTML Entitize"
+			],
+			[
+				"peek",
+				"SublimePeek: Get Help for Function"
+			],
+			[
+				"ajax",
+				"Snippet: jq_ajax"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"tab 2",
+				"Indentation: Tab Width: 2"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"wrap",
+				"BracketHighlighter: Wrap Selections with Brackets"
+			],
+			[
+				"indent 2",
+				"Indentation: Tab Width: 2"
+			],
+			[
+				"wrap ",
+				"BracketHighlighter: Wrap Selections with Brackets"
+			],
+			[
+				"bone a kit",
+				"Schemr: Paul Reny Color Schemes/Bone-a-kite-Paul"
+			],
+			[
+				"bone a ki",
+				"Schemr: Paul Reny Color Schemes/Bone-a-kite-Paul-orig"
+			],
+			[
+				"bone a paul",
+				"Schemr: Paul Reny Color Schemes/Bone-a-kite-Paul"
+			],
+			[
+				"freshcut",
+				"Schemr: Dayle Rees Color Schemes/Contrast/FreshCut"
+			],
+			[
+				"freshcu",
+				"Schemr: Paul Reny Color Schemes/FreshCut-Paul"
+			],
+			[
+				"syntax php",
+				"Set Syntax: PHP"
+			],
+			[
+				"php",
+				"Print to HTML: print as HTML via browser"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"indent",
+				"Indentation: Tab Width: 2"
+			],
+			[
+				"boots",
+				"Snippet: Bootstrap breadcrumb"
+			],
+			[
+				"reload",
+				"Reload Plugins"
+			],
+			[
+				"pcl",
+				"Package Control: List Packages"
+			],
+			[
+				"pretty",
+				"Prettify: HTMLPrettify"
+			],
+			[
+				"charset",
+				"Snippet: @charset"
+			],
+			[
+				"tid",
+				"Tidy CSS"
+			],
+			[
+				"syntax css",
+				"Set Syntax: CSS"
+			],
+			[
+				"add folder",
+				"Project: Add Folder"
+			],
+			[
+				"syntax jqu",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"pcdis",
+				"Package Control: Disable Package"
+			],
+			[
+				"pcli",
+				"Package Control: List Packages"
+			],
+			[
+				"expor",
+				"Export to HTML: Show Export Menu"
+			],
+			[
+				"pclis",
+				"Package Control: List Packages"
+			],
+			[
+				"schemr solariz",
+				"Schemr: Base16 Color Schemes/base16-solarized.light"
+			],
+			[
+				"schemr ublim",
+				"Schemr: Ublime Color Schemes/Arabian Nights"
+			],
+			[
+				"schemr ublime",
+				"Schemr: Ublime Color Schemes/Chanfle"
+			],
+			[
+				"schemr solar",
+				"Schemr: Ublime Color Schemes/Toulousse-Lautrec"
+			],
+			[
+				"schemr solari",
+				"Schemr: Dayle Rees Color Schemes/EarthsongLight"
+			],
+			[
+				"schemr solarized ligh",
+				"Schemr: Paul Reny Color Schemes/Solarized (light)"
+			],
+			[
+				"schemr solarized lig",
+				"Schemr: Syntax Highlighting for Sass/Color Scheme/Solarized (Light)"
+			],
+			[
+				"solarized",
+				"Schemr: Solarized Color Scheme/Solarized (light)"
+			],
+			[
+				"schemr .light",
+				"Schemr: Base16 Color Schemes/base16-solarized.light"
+			],
+			[
+				"schemr dayle light",
+				"Schemr: Dayle Rees Color Schemes/SnappyLight"
+			],
+			[
+				"schemr bright",
+				"Schemr: Base16 Color Schemes/base16-railscasts.light"
+			],
+			[
+				"schemer bright",
+				"Schemr: Base16 Color Schemes/base16-bright.light"
+			],
+			[
+				"schemr chalk",
+				"Schemr: Base16 Color Schemes/base16-chalk.light"
+			],
+			[
+				"sch",
+				"HttpStatusCode: Http Status Code"
+			],
+			[
+				"schemr white",
+				"Schemr: KWrite Color Scheme/KWrite"
+			],
+			[
+				"schemr gr",
+				"Schemr: Dayle Rees Color Schemes/Grunge"
+			],
+			[
+				"schemr text",
+				"Schemr: Theme - Phoenix/Color Scheme/Clouds Midnight"
+			],
+			[
+				"schemr bbed",
+				"Schemr: Paul Reny Color Schemes/BBEdit"
+			],
+			[
+				"schemr bbe",
+				"Schemr: Color Scheme - Default/BBEdit"
+			],
+			[
+				"schemr railsca",
+				"Schemr: Base16 Color Schemes/base16-railscasts.light"
+			],
+			[
+				"schemr rails",
+				"Schemr: Paul Reny Color Schemes/Rails Envy"
+			],
+			[
+				"schemr paul bone",
+				"Schemr: Paul Reny Color Schemes/Bone-a-kite-Paul"
+			],
+			[
+				"pclist",
+				"Package Control: List Packages"
+			],
+			[
+				"package lis",
+				"Package Control: List Packages"
+			],
+			[
+				"tomorrow ligh",
+				"Schemr: Base16 Color Schemes/base16-tomorrow.light"
+			],
+			[
+				"tomorrow dark",
+				"Schemr: Base16 Color Schemes/base16-tomorrow.dark"
+			],
+			[
+				"tomorrow light",
+				"Schemr: Base16 Color Schemes/base16-tomorrow.light"
+			],
+			[
+				"tomorrow",
+				"Schemr: Base16 Color Schemes/base16-tomorrow.light"
+			],
+			[
+				"dimmed",
+				"Schemr: Dimmed Color Scheme/dimmed"
+			],
+			[
+				"dimmed mono",
+				"Schemr: Dimmed Color Scheme/dimmed-monokai"
+			],
+			[
+				"monkai dark",
+				"Schemr: Pandoc Academic/ColorScheme/Monokai Dark Adapted"
+			],
+			[
+				"monokai refin",
+				"Schemr: Theme - Refined/Color Schemes/Monokai Refined"
+			],
+			[
+				"monkai",
+				"Schemr: Color Scheme - Default/Monokai"
+			],
+			[
+				"monokai",
+				"Schemr: Paul Reny Color Schemes/Monokai-FannonEdition"
+			],
+			[
+				"frontier",
+				"Schemr: Dayle Rees Color Schemes/Contrast/Frontier"
+			],
+			[
+				"schemr front",
+				"Schemr: Dayle Rees Color Schemes/Frontier"
+			],
+			[
+				"html5",
+				"Set Syntax: HTML5"
+			],
+			[
+				"syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"schemr bone paul",
+				"Schemr: Paul Reny Color Schemes/Bone-a-kite-Paul"
+			],
+			[
+				"syn jquer",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"apache",
+				"Set Syntax: Apache Conf"
+			],
+			[
+				"schemr frontier",
+				"Schemr: Dayle Rees Color Schemes/Frontier"
+			],
+			[
+				"schemr bluedaw",
+				"Schemr: Dayle Rees Color Schemes/BlueDawn"
+			],
+			[
+				"schemr daylerees",
+				"Schemr: Dayle Rees Color Schemes/Contrast/FreshCut"
+			],
+			[
+				"schemr dayle rees ",
+				"Schemr: Dayle Rees Color Schemes/Tron"
+			],
+			[
+				"dayle rees",
+				"Schemr: Dayle Rees Color Schemes/HalfLife"
+			],
+			[
+				"carlcalderon",
+				"Schemr: Color Schemes by carlcalderon/Calydon/Calydon"
+			],
+			[
+				"tyrann",
+				"Schemr: Color Schemes by carlcalderon/Tyrann/Tyrann"
+			],
+			[
+				"schemr ty",
+				"Schemr: Color Schemes by carlcalderon/Tyrann/Tyrann Blue"
+			],
+			[
+				"schemer ty",
+				"Schemr: Color Schemes by carlcalderon/Tyrann/Tyrann Alex"
+			],
+			[
+				"schemer blue",
+				"Schemr: Color Schemes by carlcalderon/Tyrann/Tyrann Blue"
+			],
+			[
+				"schemr argo",
+				"Schemr: Dayle Rees Color Schemes/Contrast/Goldfish"
+			],
+			[
+				"schemr argon",
+				"Schemr: Paul Reny Color Schemes/[ Argonaut ]"
+			],
+			[
+				"schemer tomorrow",
+				"Schemr: Theme - Phoenix/Color Scheme/Tomorrow-Night"
+			],
+			[
+				"schemer tomorrow bri",
+				"Schemr: Pandoc Academic/ColorScheme/Tomorrow-Night-Bright-Adapted"
+			],
+			[
+				"schemr refined",
+				"Schemr: Theme - Refined/Color Schemes/Tomorrow Night Refined"
+			],
+			[
+				"schemr kai",
+				"Schemr: Theme - Aqua/Color Schemes/Monokai Aqua"
+			],
+			[
+				"schemer kai",
+				"Schemr: Pylinter/MonokaiPylinter"
+			],
+			[
+				"schemr stereokai",
+				"Schemr: Color Schemes by carlcalderon/Stereokai/Stereokai"
+			],
+			[
+				"schemr fannon",
+				"Schemr: Paul Reny Color Schemes/Monokai-FannonEdition"
+			],
+			[
+				"schemr blueber",
+				"Schemr: Paul Reny Color Schemes/Monokai Blueberry"
+			],
+			[
+				"schemr ruby",
+				"Schemr: Chuby Ninja Color Scheme/Chuby Ninja"
+			],
+			[
+				"schemr rails env",
+				"Schemr: Color Scheme - Default/Rails Envy"
+			],
+			[
+				"schemr merbivore",
+				"Schemr: Paul Reny Color Schemes/Merbivore"
+			],
+			[
+				"schemr paul reny ",
+				"Schemr: Paul Reny Color Schemes/Merbivore"
+			],
+			[
+				"schem rblack pea",
+				"Schemr: Paul Reny Color Schemes/Black Pearl II"
+			],
+			[
+				"schemr black pearl",
+				"Schemr: Paul Reny Color Schemes/Black Pearl"
+			],
+			[
+				"schemr potpo",
+				"Schemr: Dayle Rees Color Schemes/Contrast/Potpourri"
+			],
+			[
+				"schemr snapp",
+				"Schemr: Dayle Rees Color Schemes/Contrast/Snappy"
+			],
+			[
+				"schemr contrast yule",
+				"Schemr: Dayle Rees Color Schemes/Contrast/Yule"
+			],
+			[
+				"schemr contrast peacock",
+				"Schemr: Dayle Rees Color Schemes/Contrast/Peacock"
+			],
+			[
+				"schemr gloom",
+				"Schemr: Dayle Rees Color Schemes/Contrast/Gloom"
+			],
+			[
+				"schemr contrast ",
+				"Schemr: Dayle Rees Color Schemes/Contrast/Glowfish"
+			],
+			[
+				"schemr contrast",
+				"Schemr: Dayle Rees Color Schemes/Contrast/Stark"
+			],
+			[
+				"schemr carbon",
+				"Schemr: Dayle Rees Color Schemes/CarbonightBlue"
+			],
+			[
+				"schemr carbon blue",
+				"Schemr: Dayle Rees Color Schemes/Contrast/CarbonightBlue"
+			],
+			[
+				"schemr carbonblu",
+				"Schemr: Dayle Rees Color Schemes/CarbonightBlue"
+			],
+			[
+				"schemr contrast carbon",
+				"Schemr: Dayle Rees Color Schemes/Contrast/Carbonight"
+			],
+			[
+				"schemr blueda",
+				"Schemr: Dayle Rees Color Schemes/BlueDawn"
+			],
+			[
+				"schemr apache",
+				"Schemr: Dark Pastel Color Scheme/dark-pastel"
+			],
+			[
+				"schemr taxi",
+				"Schemr: JavaScriptNext - ES6 Syntax/JavaScriptNext"
+			],
+			[
+				"schemr expert",
+				"Schemr: Theme - Phoenix/Color Scheme/Phoenix Dark Yellow - Eighties"
+			],
+			[
+				"themefar",
+				"Schemr: Theme - Flatland/Flatland Dark"
+			],
+			[
+				"syntax log",
+				"Set Syntax: SystemVerilog"
+			],
+			[
+				"syntax regex",
+				"Set Syntax: Regular Expression"
+			],
+			[
+				"syntax apach",
+				"Set Syntax: Apache Conf"
+			],
+			[
+				"syntax reg",
+				"Set Syntax: Regular Expression"
+			],
+			[
+				"syntax rege",
+				"Set Syntax: Regular Expression (Escaped)"
+			],
+			[
+				"regex",
+				"Set Syntax: Regular Expression"
+			],
+			[
+				"sidebar reve",
+				"Side Bar: Reveal File"
+			],
+			[
+				"sidebar rev",
+				"Side Bar: Reveal File"
+			],
+			[
+				"reveal",
+				"File: Reveal"
+			],
+			[
+				"syntax sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"table edito",
+				"Table Editor: Disable for current syntax"
+			],
+			[
+				"binary",
+				"Table Editor: Enable for current syntax"
+			],
+			[
+				"syntaxjson",
+				"Set Syntax: JSON Generic Array Elements"
+			]
+		],
+		"width": 624.0
+	},
+	"console":
+	{
+		"height": 145.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/paulreny/Development/GitHub/paultreny/firepad/cdia.html",
+		"/Users/paulreny/Development/GitHub/firepad/examples/firepad-userlist.js",
+		"/Users/paulreny/Development/GitHub/firepad/examples/code.html",
+		"/Users/paulreny/Development/GitHub/firepad/examples/userlist.html",
+		"/Users/paulreny/Development/GitHub/firepad/codemirror/demo/theme.html",
+		"/Users/paulreny/Development/GitHub/firepad/cdia.html",
+		"/Users/paulreny/Development/GitHub/firepad/codemirror/mode/htmlmixed/htmlmixed.js",
+		"/Users/paulreny/Development/GitHub/firepad/codemirror/mode/htmlmixed/index.html",
+		"/Users/paulreny/Development/GitHub/firepad/codemirror/theme/midnight.css",
+		"/Users/paulreny/Development/GitHub/firepad/codemirror/theme/solarized.css",
+		"/Users/paulreny/Development/GitHub/firepad/examples/firepad-userlist.css",
+		"/Users/paulreny/Development/GitHub/firepad/examples/firepad.css",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/profile.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/login.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/logout.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/OSC.js",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/header.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/signup.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/functions.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/checkuser.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/index.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/setup.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/messages.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/members.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/lists.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/index.html",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/friends.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/styles.css",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/assets/css/grocerypower.css",
+		"/Users/paulreny/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/paulreny/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/lpmj_examples/robinsnest/login.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/assets/js/bootstrap.min.js",
+		"/Users/paulreny/Downloads/bootstrap (5)/js/bootstrap.min.js",
+		"/Users/paulreny/Downloads/bootstrap (5)/js/bootstrap.js",
+		"/Users/paulreny/Development/GitHub/bootstrap/js/bootstrap-modal.js",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/assets/js/bootstrap.js",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/marketing-narrow.html",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/grocerypower.txt",
+		"/Users/paulreny/.bash_profile",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/blog/index.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/blog/completed/index.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/blog/completed/functions.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/blog/completed/get_page.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/raw_data/xml.php",
+		"/Users/paulreny/Desktop/wireframe work color palette.txt",
+		"/Users/paulreny/Desktop/the perfect $.ajax request.js",
+		"/Users/paulreny/Desktop/$.ajax({\n  type: 'POST',\n  url: 'http:/kyleschaeffer.com/feed/',\n  data: { postVar1: 'theValue1', postVar2: 'theValue2' },\n  beforeSend:function(){\n    / this is where we append a loading image\n    $('#ajax-panel').html('<div class=\"loading\"><img src=\"/images/loading.gif\" alt=\"Loading...\" /></div>');\n  },\n  success:function(data){\n    / successful request; do something with the data\n    $('#ajax-panel').empty();\n    $(data).find('item').each(function(i){\n      $('#ajax-panel').append('<h4>' + $(this).find('title').text() + '</h4><p>' + $(this).find('link').text() + '</p>');\n    });\n  },\n  error:function(){\n    / failed request; give feedback to user\n    $('#ajax-panel').html('<p class=\"error\"><strong>Oops!</strong> Try that again in a few moments.</p>');\n  }\n});\n",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/raw_data/client.html",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/raw_data/index.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/raw_data/json.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/raw_data/client.js",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/raw_data/completed/xml.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/raw_data/completed/json.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/raw_data/completed/index.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/raw_data/completed/client.js",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/raw_data/completed/client.html",
+		"/Users/paulreny/Development/GitHub/textmate-solarized/Solarized (light).tmTheme",
+		"/Users/paulreny/Development/GitHub/textmate-solarized/Solarized (dark).tmTheme",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/blog/posts.sql",
+		"/Users/paulreny/Desktop/work color palette.txt",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/raw_data/products.sql",
+		"/Users/paulreny/Library/Application Support/Sublime Text 2/Packages/ExportHtml/ExportHtml.sublime-settings",
+		"/Users/paulreny/Library/Application Support/Sublime Text 2/Packages/User/ExportHtml.sublime-settings",
+		"/Users/paulreny/Library/Application Support/Sublime Text 2/Packages/ExportHtml/ExportHtml.py",
+		"/Users/paulreny/Library/Caches/Cleanup At Startup/Transmit/2A31A8A5-C2A0-4CF9-9552-8F1F212A3ACA/.htaccess",
+		"/Users/paulreny/Library/Caches/Cleanup At Startup/Transmit/4FA6E700-3D9F-430E-BFDE-2EEE3D1BB8D8/.htaccess",
+		"/Users/paulreny/Library/Caches/Cleanup At Startup/Transmit/2050B94D-EC56-4932-B948-1D39B830A2E9/.htaccess",
+		"/Users/paulreny/Library/Application Support/Google/Chrome/Default/Extensions/hkggcdanhcfibkhpfiogkoaodjalekcc/2.6_0/remove.js",
+		"/Users/paulreny/Downloads/jquery-1.9.1.min (7).js",
+		"/Users/paulreny/Desktop/chrome errors.html",
+		"/Users/paulreny/Library/Application Support/Google/Chrome/Default/Extensions/hkggcdanhcfibkhpfiogkoaodjalekcc/2.6_0/jquery.js",
+		"/Users/paulreny/Library/Application Support/Google/Chrome/Default/Extensions/hkggcdanhcfibkhpfiogkoaodjalekcc/2.6_0/manifest.json",
+		"/Users/paulreny/Desktop/regex paul.re",
+		"/var/folders/29/_xjy029d50q19jgzgfv8z6dw0000gn/T/tmpmCTngO.html",
+		"/Users/paulreny/Desktop/cdia netclassroom.txxt.html",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/users.sql",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/injection_attacks/users.sql",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/injection_attacks/completed/index.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/injection_attacks/completed/success.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/injection_attacks/completed/register-action.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/injection_attacks/index.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/login.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/login-action.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/index.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/functions.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/edit-action.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/edit.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/fixMagicQuotes.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/logout.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/post.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/posts.sql",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/register-action.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/PHP5 Deliverable.text",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/register.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/injection_attacks/functions.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/shopping_cart/style.css",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/DB dump.sql",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/_h5ai/server/php/index.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/forgotten_password/functions.php",
+		"/Applications/MAMP/logs/logstash-simple.conf",
+		"/Applications/MAMP/logs/apache-parse.conf",
+		"/Users/paulreny/Development/GitHub/logstash/pkg/build.sh",
+		"/Users/paulreny/Desktop/Chef Private User Key Opscode.txt",
+		"/Applications/MAMP/logs/php grok.conf",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/functions.php",
+		"/Applications/MAMP/logs/logstash-complex.conf",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/cross-site_scripting/index.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/cross-site_scripting/completed/index.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/forgotten_password/index.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/cross-site_scripting/completed/functions.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/cross-site_scripting/process-form.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/cross-site_scripting/functions.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/_h5ai/conf/options.json",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/shopping_cart/one-tab 13-05-19 11-35pm.txt",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/classes/Calendar.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/box/completed/<!DOCTYPE html>\n<html>\n<head>\n	<title>Fun with Boxes</title>\n</head>\n<body>\n<?php\n\nrequire 'Box.php';\n\n/ Create a red box at 50,50\necho new Box(50, 50, 'red');\n\n/ Create a green box at 150,150\necho new Box(150, 150, 'green');\n\n/ Create a blue box at 250,250\necho new Box(250, 250, 'blue');\n\n?>\n</body>\n</html>",
+		"/Users/paulreny/Desktop/Learning PHP, MySQL, JavaScript, & CSS - 2nd Edition Examples/10/example10-16.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/classes/ClearphpDiv.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/Forms.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/style.css",
+		"/Applications/MAMP/logs/php_error.log",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w13/Training/PHP/PHP4 - Object Oriented Programming/handouts/final_deliverable/event_planner.sql",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/classes/DynamicModel.php",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/HTMLTags.php",
+		"/Users/paulreny/Downloads/posts.sql",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/event_planner.sql",
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/classes/UserLoginStatus_backup.php"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18",
+			"",
+			"formHideOthers.html",
+			"index_index.html",
+			"popquiz-3.*",
+			"popquiz-3.html",
+			"<open files>",
+			"<htaccess.txt>",
+			".htaccess /theme",
+			"<open files>.html",
+			"<open files>",
+			"index.html",
+			"barber_contact.html",
+			"",
+			"selection",
+			"",
+			"selection",
+			"",
+			"\n			<key>archersUpEagleEye</key>\n			<true/>\n			<key>archersUpFarShots</key>\n			<true/>\n			<key>archersUpLevel</key>\n			<integer>5</integer>\n			<key>archersUpPiercing</key>\n			<true/>\n			<key>archersUpPrecision</key>\n			<true/>\n			<key>archersUpSalvage</key>\n			<true/>\n			<key>barracksUpBarbedArmor</key>\n			<false/>\n			<key>barracksUpBetterArmor</key>\n			<true/>\n			<key>barracksUpImprovedDeployment</key>\n			<true/>\n			<key>barracksUpLevel</key>\n			<integer>3</integer>\n			<key>barracksUpSurvival</key>\n			<true/>\n			<key>barracksUpSurvival2</key>\n			<false/>\n			<key>engineersUpConcentratedFire</key>\n			<true/>\n			<key>engineersUpEfficiency</key>\n			<false/>\n			<key>engineersUpFieldLogistics</key>\n			<false/>\n			<key>engineersUpIndustrialization</key>\n			<false/>\n			<key>engineersUpLevel</key>\n			<integer>2</integer>\n			<key>engineersUpRangeFinder</key>\n			<true/>\n			<key>magesUpArcaneShatter</key>\n			<true/>\n			<key>magesUpEmpoweredMagic</key>\n			<false/>\n			<key>magesUpHermeticStudy</key>\n			<false/>\n			<key>magesUpLevel</key>\n			<integer>2</integer>\n			<key>magesUpSlowCurse</key>\n			<false/>\n			<key>magesUpSpellReach</key>\n			<true/>\n			<key>rainUpBiggerAndMeaner</key>\n			<false/>\n			<key>rainUpBlazingEarth</key>\n			<false/>\n			<key>rainUpBlazingSkies</key>\n			<true/>\n			<key>rainUpCataclysm</key>\n			<false/>\n			<key>rainUpLevel</key>\n			<integer>2</integer>\n			<key>rainUpScorchedEarth</key>\n			<true/>\n			<key>reinforcementLevel</key>\n			<integer>4</integer>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".css\" />",
+			".css\">",
+			"../theme",
+			"catch",
+			"try",
+			"} else {",
+			"}\\s(else)",
+			"(\\w*[\\n\\s\\t]*)\\}\\s(else)",
+			"(\\}[\\n\\s\\t]*)\\s(else)",
+			"include_once",
+			"messages.php",
+			"members.php",
+			"members",
+			"Example\\s\\d\\d\\-\\d\\d:\\s",
+			"messages\\.php",
+			"messages",
+			"members",
+			"profiles",
+			"members",
+			"(Example\\s\\d\\d\\-\\d:\\s)",
+			"ico",
+			"(\\.\\.)*\\/assets",
+			"(\\.\\.)*\\/(assets)",
+			"match",
+			"#",
+			"^[\\t\\s]*([a-zA-Z0-9-]{7,8}) - \\d, (.*)\\s((Taught by:\\s\\w+\\s\\w+)|())",
+			"^[\\t\\s]*([a-zA-Z0-9-]{7,8}) - \\d, .*\\s((Taught by:\\s\\w+\\s\\w+)|())",
+			"^[\\t\\s]*([a-zA-Z0-9-]{7,8}) - \\d, .*\\s(?:(Taught by:\\s\\w+\\s\\w+)|)",
+			"script",
+			"bash",
+			"sh",
+			"she",
+			"sucess",
+			"test",
+			"convert",
+			"short",
+			"margin",
+			"redirect(",
+			"redirect ",
+			"redirect",
+			"redirect ",
+			"redirect",
+			"__autoload",
+			"div",
+			"span",
+			"echo",
+			"<<<",
+			"round",
+			"comming",
+			"upcomming",
+			"Upcomming",
+			">Upcomming",
+			"<Upcomming",
+			"paulr",
+			"subseq",
+			"indent",
+			"wrap",
+			"fallback",
+			"芦",
+			"1;33",
+			"芦",
+			"codemirror(",
+			"codemirror",
+			"\"\"",
+			"A6E22E",
+			">\n",
+			"caret",
+			"square",
+			"66D9EF",
+			"text",
+			"function",
+			"diff",
+			"default",
+			"unmatched",
+			"invalid",
+			".regex",
+			"regex",
+			"E6DB74",
+			"e6d",
+			"E6DB74",
+			"FFCC66",
+			"[^</]source[^>]",
+			"[^</]string[^>]",
+			"string",
+			"string<",
+			"quote",
+			"text",
+			"punc",
+			"text",
+			"[^<]quote[^>]",
+			"[^<]string[^>]",
+			"string",
+			"tag",
+			"F92672",
+			"tag",
+			"angle",
+			"string",
+			"quote",
+			"default",
+			"unmatched",
+			"guide",
+			"mysqli",
+			"caret",
+			"gutter",
+			"bgaline",
+			"bg",
+			"gu",
+			"gutter",
+			"%d",
+			"time_stamp",
+			"background",
+			"bg",
+			"background",
+			"today",
+			"mark",
+			"mysqli",
+			"sqli",
+			"bold",
+			"900",
+			"600",
+			"font-weight:300",
+			"600",
+			"300",
+			"font-weight:",
+			"font-weight:normal",
+			"\"Medium\"",
+			"bolder",
+			"variabl"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".css\">",
+			".css\" />",
+			"codemirror/theme",
+			"} else",
+			"require_once",
+			"",
+			"lists.php",
+			"",
+			"assets",
+			"$1\n#",
+			"\n#",
+			"$1 - $2, $3",
+			"$1 - $2",
+			"$1 - ",
+			"$1 - $2",
+			"coming",
+			"upcoming",
+			"Upcoming",
+			">Upcoming",
+			"<Upcoming",
+			".",
+			"«",
+			");\n",
+			"bold",
+			"font-weight:normal",
+			"900",
+			"font-weight:300",
+			"300",
+			"600",
+			"\"Medium\"",
+			"font-weight:bolder;",
+			"",
+			"##REQUEST",
+			"\n",
+			"$1",
+			"\"",
+			"class=\"img\"",
+			"class=\"textArea\"",
+			"class=\"quiz\"",
+			"DoTheMath",
+			"starLine",
+			"star_diamond",
+			"/apaxy/",
+			"/apaxy/theme/",
+			"",
+			"%2C\n",
+			"\"../stylesheets/",
+			"\"><i class=\"halflings-icon envelope white\"></i>Contact</a><",
+			"\"><i class=\"halflings-icon flag white\"></i>Press</a><",
+			"\"><i class=\"halflings-icon shopping-cart white\"></i>Services</a><",
+			"\"><i class=\"halflings-icon time white\"></i>Hours</a><",
+			"\"><i class=\"halflings-icon star white\"></i>About</a><",
+			"closed",
+			"&amp;",
+			"		",
+			"color: #",
+			"",
+			"\n\\r",
+			"\\rcolor: ",
+			")",
+			")&\n",
+			"\n)&",
+			"\n=rgba(",
+			"\"",
+			"<integer>3</integer>\n	<key>STARS"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 7320,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6520,
+								6520
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"buffer_scroll_name": "c2955050",
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2139.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 27.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.aaa_package_dev":
+	{
+		"height": 102.0
+	},
+	"output.clang":
+	{
+		"height": 102.0
+	},
+	"output.exec":
+	{
+		"height": 60.0
+	},
+	"output.find_results":
+	{
+		"height": 287.0
+	},
+	"output.git":
+	{
+		"height": 104.0
+	},
+	"output.haskell_sublime_load":
+	{
+		"height": 102.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 116.0
+	},
+	"output.scope_viewer":
+	{
+		"height": 104.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"header",
+				"w16/box/completed/<!DOCTYPE html>\n<html>\n<head>\n	<title>Fun with Boxes</title>\n</head>\n<body>\n<?php\n\nrequire 'Box.php';\n\n/ Create a red box at 50,50\necho new Box(50, 50, 'red');\n\n/ Create a green box at 150,150\necho new Box(150, 150, 'green');\n\n/ Create a blue box at 250,250\necho new Box(250, 250, 'blue');\n\n?>\n</body>\n</html>"
+			],
+			[
+				"userloginstatus",
+				"w16/Training/PHP/PHP4 - Object Oriented Programming/handouts/final_deliverable/classes/UserLoginStatus.php"
+			],
+			[
+				"servers",
+				"views/servers.haml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 394.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 245.0,
+	"status_bar_visible": true
+}
