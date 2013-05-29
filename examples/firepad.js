@@ -3108,6 +3108,7 @@ firepad.Formatting = (function() {
 
   return Formatting;
 })();
+
 var firepad = firepad || { };
 
 /**

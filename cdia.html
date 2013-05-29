@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CDIA Code</title>
+  <!-- Include Firebase -->
+  <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+
+  <!-- Include CodeMirror and its JavaScript mode file -->
+  <!-- <script src="codemirror/lib/codemirror.js"></script>
+  <script src="codemirror/mode/htmlmixed/htmlmixed.js"></script>
+  <script src="codemirror/mode/javascript/javascript.js"></script>
+  <script src="codemirror/mode/php/php.js"></script> -->
+
+	<script type="text/javascript" src="codemirror-compressed.js"></script>
+
+	<!-- Include Firepad -->
+	<script src="build/firepad.js"></script>
+
+  <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+  <!-- codemirror theme css files -->
+  <link rel="stylesheet" href="build/firepad.css">
+  <link rel="stylesheet" href="examples/firepad-userlist.css">
+  <link rel="stylesheet" href="codemirror/theme/neat.css">
+  <link rel="stylesheet" href="codemirror/theme/elegant.css">
+  <link rel="stylesheet" href="codemirror/theme/erlang-dark.css">
+  <link rel="stylesheet" href="codemirror/theme/night.css">
+  <link rel="stylesheet" href="codemirror/theme/monokai.css">
+  <link rel="stylesheet" href="codemirror/theme/cobalt.css">
+  <link rel="stylesheet" href="codemirror/theme/eclipse.css">
+  <link rel="stylesheet" href="codemirror/theme/rubyblue.css">
+  <link rel="stylesheet" href="codemirror/theme/lesser-dark.css">
+  <link rel="stylesheet" href="codemirror/theme/xq-dark.css">
+  <link rel="stylesheet" href="codemirror/theme/xq-light.css">
+  <link rel="stylesheet" href="codemirror/theme/ambiance.css">
+  <link rel="stylesheet" href="codemirror/theme/blackboard.css">
+  <link rel="stylesheet" href="codemirror/theme/vibrant-ink.css">
+  <link rel="stylesheet" href="codemirror/theme/solarized.css">
+  <link rel="stylesheet" href="codemirror/theme/twilight.css">
+  <link rel="stylesheet" href="codemirror/theme/midnight.css">
+
+  <!-- <script type='text/javascript'
+  	src='https://cdn.firebase.com/v0/firebase-auth-client.js'>
+  </script>-->
+  <script src="examples/firepad-userlist.js"></script>
+
+  <!-- Helper for generating URLs / Firebase references for example purposes.
+       Not necessary in production apps. -->
+  <!-- <script src="example-helper.js"></script> -->
+  <style>
+	html { height: 100%; }
+	body { margin: 30px auto auto; height: 90%; width: 90%; position: relative; }
+ .firepad-userlist {
+   position: absolute; left: 0; top: 80px; bottom: 0; height: auto;
+   width: 175px;
+	}
+ .firepad {
+	position: absolute; left: 175px; top: 0; bottom: 0; right: 0; height: auto;
+	}
+	h1 {  font-family: "Helvetica Neue", Helvetica, sans-serif; font-size: 24px;
+				font-weight: bold; letter-spacing: 1px; text-align: left;
+				border-bottom: 3px solid #C00;}
+  #wrapper p {
+	  font-family: "Helvetica Neue", Helvetica, sans-serif;
+	  font-weight: 400; font-size: 12px;
+	}
+  </style>
+</head>
+<body>
+	<div id="wrapper">
+		<h1 id="headerText">CDIA Firepad</h1>
+		<p>Theme &raquo;<select onchange="selectTheme()" id="selectTheme">
+		    <option>default</option>
+		    <option>ambiance</option>
+		    <option>blackboard</option>
+		    <option>cobalt</option>
+		    <option>eclipse</option>
+		    <option>elegant</option>
+		    <option>erlang-dark</option>
+		    <option>lesser-dark</option>
+		    <option>midnight</option>
+		    <option>monokai</option>
+		    <option>neat</option>
+		    <option>night</option>
+		    <option selected=selected>rubyblue</option>
+		    <option>solarized dark</option>
+		    <option>solarized light</option>
+		    <option>twilight</option>
+		    <option>vibrant-ink</option>
+		    <option>xq-dark</option>
+		    <option>xq-light</option>
+		</select>
+		</p>
+	</div>
+	<div id="userlist"></div>
+  <div id="firepad-container"></div>
+  <script type="text/javascript">
+  	/* var authClient = new FirebaseAuthClient(firebaseRef, function(error, user) {
+	    if (error) {
+	      // an error occurred while attempting login
+	      console.log(error);
+	    } else if (user) {
+	      // user authenticated with Firebase
+	      console.log('User ID: ' + user.id + ', Provider: ' + user.provider);
+	    } else {
+	    	authClient.login('github', {
+	    	  rememberMe: true,
+	    	  scope: 'user,gist'
+	    	});
+	      // user is logged out
+	    }
+		});
+*/
+    var firepadRef = new Firebase('https://cdia.firebaseio.com');
+    // Create CodeMirror (with line numbers and the JavaScript mode).
+    var mixedMode = {
+      name: "htmlmixed",
+      scriptTypes: [{ matches: /(text|application)\/(x-)?(javascript)/i,
+                     mode: "javascript" }]
+		}
+    var codeMirror = CodeMirror(document.getElementById('firepad-container'), {
+      lineNumbers: true,
+      mode: mixedMode,
+      tabSize: 2,
+      tabMode: "indent",
+      indentWithTabs: true,
+      lineWrapping: true,
+      cursorBlinkRate: 265,
+      cursorScrollMargin: 2,
+      flattenSpans: false
+    });
+    var input = document.getElementById("selectTheme");
+    function selectTheme() {
+      var theme = input.options[input.selectedIndex].innerHTML;
+      codeMirror.setOption("theme", theme);
+    }
+    var choice = document.location.search &&
+                 decodeURIComponent(document.location.search.slice(1));
+    if (choice) {
+      input.value = choice;
+      codeMirror.setOption("theme", choice);
+    }
+
+    //var userId = Math.floor(Math.random() * 9999999999).toString();
+    var userString = "";
+    var hexLetters = "ABCDEF"
+    for (var j = 0; j < 6; j++) {
+      index = Math.floor(Math.random() * 6);
+      userString += hexLetters.slice(index, ++index); }
+    document.getElementById('headerText').innerHTML = userString;
+    //// Create Firepad (with rich text features and our desired userId).
+    //var userString = ("cdia" + (Math.floor(Math.random() * 9999)).toString());
+    // Create Firepad.
+    var firepad = Firepad.fromCodeMirror(firepadRef, codeMirror, { userId: userString });
+   	// Create firepadUserList (with our desired userId).
+    var firepadUserList = FirepadUserList.fromDiv(firepadRef.child('users'),
+      document.getElementById('userlist'), userString);
+
+    firepad.on('ready', function() {
+      if (firepad.isHistoryEmpty() === true) {
+        firepad.setText("CDIA Firepad (Work in Progress...)")
+      }
+    });
+  </script>
+ <!--
+  <script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+      lineNumbers: true
+    });
+    var input = document.getElementById("select");
+    function selectTheme() {
+      var theme = input.options[input.selectedIndex].innerHTML;
+      editor.setOption("theme", theme);
+    }
+    var choice = document.location.search &&
+                 decodeURIComponent(document.location.search.slice(1));
+    if (choice) {
+      input.value = choice;
+      editor.setOption("theme", choice);
+    }
+  </script>
+-->
+</body>
+</html>
