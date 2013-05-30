@@ -90,6 +90,4 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', ['concat', 'uglify', 'copy', 'compress']);
 };
-var i = "'';
-{
-    5/0;
+
