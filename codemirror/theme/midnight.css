@@ -16,7 +16,7 @@ span.CodeMirror-matchhighlight { background: #494949; }
     color: #D1EDFF;
 }
 
-.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}
+/*.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}*/
 
 .cm-s-midnight div.CodeMirror-selected {background: #314D67 !important;}
 .cm-s-midnight .CodeMirror-gutters {background: #0F192A; border-right: 1px solid;}

@@ -1,0 +1,64 @@
+/* ------------------------------------------
+  CodeMirror
+---------------------------------------------*/
+.CodeMirror {
+  font-family: 'Menlo', monospace;
+  font-size:13px;
+  line-height:1.4em;
+  -webkit-font-smoothing:subpixel-antialiased;
+  }
+.code .CodeMirror-scroll {
+  min-height:360px;
+  }
+  .markdown .CodeMirror {
+    font-size:14px;
+    line-height:1.75em
+    }
+
+.CodeMirror-scroll {
+  /* Set scrolling behaviour here */
+  overflow: auto;
+  }
+
+/* PADDING */
+
+.CodeMirror-scrollbar-filler {
+  background-color: white; /* The little square between H and V scrollbars */
+}
+
+/* GUTTER */
+.CodeMirror-linenumbers {}
+.CodeMirror-linenumber {
+  padding:0 3px 0 5px;
+  min-width:20px;
+  text-align:right;
+  color:#d4d7d9;
+  }
+.cm-s-prose-bright .CodeMirror-gutter {
+  border-right:1px solid #eff3f5;
+  padding-right:5px;
+  margin-right:15px;
+  min-width:2.5em;
+  }
+
+/* CURSOR */
+.CodeMirror div.CodeMirror-cursor {
+  border-left: 1px solid #3D494E;
+  z-index: 3;
+  }
+.cm-s-prose-bright .CodeMirror-cursor { border-left: 2px solid #667880; }
+.cm-s-prose-bright .CodeMirror-lines { margin:0; }
+
+/* Shown when moving in bi-directional text */
+.CodeMirror div.CodeMirror-secondarycursor {
+  border-left: 1px solid #e0e7eb;
+  }
+.CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
+  width: auto;
+  border: 0;
+  background: #90bb74;
+  z-index: 1;
+}
+/* Can style cursor different in overwrite (non-insert) mode */
+.CodeMirror div.CodeMirror-cursor.CodeMirror-overwrite {}
+.cm-tab { display: inline-block; }

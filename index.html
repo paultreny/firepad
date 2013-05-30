@@ -17,7 +17,7 @@
 	<!-- Include Firepad -->
 	<script src="build/firepad.js"></script>
 
-  <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+
   <!-- codemirror theme css files -->
   <link rel="stylesheet" href="build/firepad.css">
   <link rel="stylesheet" href="examples/firepad-userlist.css">
@@ -39,6 +39,7 @@
   <link rel="stylesheet" href="codemirror/theme/twilight.css">
   <link rel="stylesheet" href="codemirror/theme/midnight.css">
 
+  <link rel="stylesheet" href="codemirror/lib/codemirror.css">
   <!-- <script type='text/javascript'
   	src='https://cdn.firebase.com/v0/firebase-auth-client.js'>
   </script>-->
@@ -129,6 +130,7 @@
       cursorScrollMargin: 2,
       flattenSpans: false
     });
+    
     var input = document.getElementById("selectTheme");
     function selectTheme() {
       var theme = input.options[input.selectedIndex].innerHTML;
