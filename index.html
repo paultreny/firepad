@@ -38,8 +38,9 @@
   <link rel="stylesheet" href="codemirror/theme/solarized.css">
   <link rel="stylesheet" href="codemirror/theme/twilight.css">
   <link rel="stylesheet" href="codemirror/theme/midnight.css">
-
   <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+  <link rel="stylesheet" href="prose-bright.css">
+  <link rel="stylesheet" href="prose-codemirror.css">
   <!-- <script type='text/javascript'
   	src='https://cdn.firebase.com/v0/firebase-auth-client.js'>
   </script>-->
@@ -122,6 +123,7 @@
     var codeMirror = CodeMirror(document.getElementById('firepad-container'), {
       lineNumbers: true,
       mode: mixedMode,
+      theme: "prose-bright",
       tabSize: 2,
       tabMode: "indent",
       indentWithTabs: true,
