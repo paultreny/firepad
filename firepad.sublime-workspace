@@ -256,10 +256,114 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "/Users/paulreny/Desktop/exercises/todo/index.php",
 			"settings":
 			{
-				"buffer_size": 7320,
+				"buffer_size": 1019,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Users/paulreny/Desktop/18wk/functions.php",
+			"settings":
+			{
+				"buffer_size": 1159,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/paulreny/Desktop/18wk/products.php",
+			"settings":
+			{
+				"buffer_size": 5955,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/paulreny/Desktop/18wk/classes/User.php",
+			"settings":
+			{
+				"buffer_size": 228,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/paulreny/Desktop/18wk/classes/DynamicModel.php",
+			"settings":
+			{
+				"buffer_size": 4466,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/paulreny/Development/GitHub/CodeMirror/lib/codemirror.css",
+			"settings":
+			{
+				"buffer_size": 5827,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Users/paulreny/Development/GitHub/CodeMirror/lib/codemirror.js",
+			"settings":
+			{
+				"buffer_size": 219606,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Users/paulreny/Development/GitHub/temp-family-suite/app/index.php",
+			"settings":
+			{
+				"buffer_size": 642,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Users/paulreny/Desktop/18wk/classes/UserLoginStatus.php",
+			"settings":
+			{
+				"buffer_size": 406,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/paulreny/Desktop/18wk/index.php",
+			"settings":
+			{
+				"buffer_size": 5738,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/paulreny/Desktop/18wk/Forms.php",
+			"settings":
+			{
+				"buffer_size": 11151,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Users/paulreny/Desktop/18wk/createUser.php",
+			"settings":
+			{
+				"buffer_size": 3493,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/paulreny/Desktop/18wk/classes/Category.php",
+			"settings":
+			{
+				"buffer_size": 169,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "h5bp-html5-index.html",
+			"settings":
+			{
+				"buffer_size": 1957,
 				"line_ending": "Unix"
 			}
 		}
@@ -267,9 +371,109 @@
 	"build_system": "Packages/JSLint/JSLint.sublime-build",
 	"command_palette":
 	{
-		"height": 375.0,
+		"height": 177.0,
 		"selected_items":
 		[
+			[
+				"link st",
+				"Snippet: link - stylesheet"
+			],
+			[
+				"mov",
+				"File: Move"
+			],
+			[
+				"move ",
+				"File: Move"
+			],
+			[
+				"colo ",
+				"Color picker"
+			],
+			[
+				"colo pi",
+				"Color picker"
+			],
+			[
+				"color pic",
+				"Color picker"
+			],
+			[
+				"pcdis",
+				"Package Control: Disable Package"
+			],
+			[
+				"key",
+				"FindKeyConflicts: Command Search"
+			],
+			[
+				"pcl",
+				"Package Control: List Packages"
+			],
+			[
+				"pack dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"charac",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"character",
+				"Transpose Character"
+			],
+			[
+				"unicod",
+				"String Utilities: Convert From Unicode Notation"
+			],
+			[
+				"quotes",
+				"ChangeQuotes"
+			],
+			[
+				"syntax apple",
+				"Set Syntax: AppleScript"
+			],
+			[
+				"syn json gen arr ele",
+				"Set Syntax: JSON Generic Array Elements"
+			],
+			[
+				"json ",
+				"Indent JSON"
+			],
+			[
+				"syntax json gn arra",
+				"Set Syntax: JSON Generic Array Elements"
+			],
+			[
+				"syntax json",
+				"Set Syntax: JSON Generic Array Elements"
+			],
+			[
+				"syntax json ",
+				"Set Syntax: SJSON"
+			],
+			[
+				"synta json",
+				"Set Syntax: Json Generic Object Elements"
+			],
+			[
+				"syn json",
+				"Set Syntax: JSON Generic Array Elements"
+			],
+			[
+				"indent json",
+				"Indent JSON"
+			],
+			[
+				"inden",
+				"Indentation: Tab Width: 2"
+			],
+			[
+				"json",
+				"Indent JSON"
+			],
 			[
 				"renam",
 				"File: Rename"
@@ -355,10 +559,6 @@
 				"Reload Plugins"
 			],
 			[
-				"pcl",
-				"Package Control: List Packages"
-			],
-			[
 				"pretty",
 				"Prettify: HTMLPrettify"
 			],
@@ -381,10 +581,6 @@
 			[
 				"syntax jqu",
 				"Set Syntax: jQuery (JavaScript)"
-			],
-			[
-				"pcdis",
-				"Package Control: Disable Package"
 			],
 			[
 				"pcli",
@@ -689,101 +885,9 @@
 			[
 				"schemr contrast ",
 				"Schemr: Dayle Rees Color Schemes/Contrast/Glowfish"
-			],
-			[
-				"schemr contrast",
-				"Schemr: Dayle Rees Color Schemes/Contrast/Stark"
-			],
-			[
-				"schemr carbon",
-				"Schemr: Dayle Rees Color Schemes/CarbonightBlue"
-			],
-			[
-				"schemr carbon blue",
-				"Schemr: Dayle Rees Color Schemes/Contrast/CarbonightBlue"
-			],
-			[
-				"schemr carbonblu",
-				"Schemr: Dayle Rees Color Schemes/CarbonightBlue"
-			],
-			[
-				"schemr contrast carbon",
-				"Schemr: Dayle Rees Color Schemes/Contrast/Carbonight"
-			],
-			[
-				"schemr blueda",
-				"Schemr: Dayle Rees Color Schemes/BlueDawn"
-			],
-			[
-				"schemr apache",
-				"Schemr: Dark Pastel Color Scheme/dark-pastel"
-			],
-			[
-				"schemr taxi",
-				"Schemr: JavaScriptNext - ES6 Syntax/JavaScriptNext"
-			],
-			[
-				"schemr expert",
-				"Schemr: Theme - Phoenix/Color Scheme/Phoenix Dark Yellow - Eighties"
-			],
-			[
-				"themefar",
-				"Schemr: Theme - Flatland/Flatland Dark"
-			],
-			[
-				"syntax log",
-				"Set Syntax: SystemVerilog"
-			],
-			[
-				"syntax regex",
-				"Set Syntax: Regular Expression"
-			],
-			[
-				"syntax apach",
-				"Set Syntax: Apache Conf"
-			],
-			[
-				"syntax reg",
-				"Set Syntax: Regular Expression"
-			],
-			[
-				"syntax rege",
-				"Set Syntax: Regular Expression (Escaped)"
-			],
-			[
-				"regex",
-				"Set Syntax: Regular Expression"
-			],
-			[
-				"sidebar reve",
-				"Side Bar: Reveal File"
-			],
-			[
-				"sidebar rev",
-				"Side Bar: Reveal File"
-			],
-			[
-				"reveal",
-				"File: Reveal"
-			],
-			[
-				"syntax sql",
-				"Set Syntax: SQL"
-			],
-			[
-				"table edito",
-				"Table Editor: Disable for current syntax"
-			],
-			[
-				"binary",
-				"Table Editor: Enable for current syntax"
-			],
-			[
-				"syntaxjson",
-				"Set Syntax: JSON Generic Array Elements"
 			]
 		],
-		"width": 624.0
+		"width": 423.0
 	},
 	"console":
 	{
@@ -800,6 +904,50 @@
 	},
 	"file_history":
 	[
+		"/Users/paulreny/.bash_profile",
+		"/Users/paulreny/Development/GitHub/paultreny/firepad/index.html",
+		"/Users/paulreny/Desktop/h5bp-html5-index.html",
+		"/Users/paulreny/Desktop/prose-codemirror.css",
+		"/Users/paulreny/Desktop/prose-bright.css",
+		"/Users/paulreny/Desktop/github columns.txt",
+		"/Users/paulreny/Development/GitHub/paultreny/firepad/codemirror/index.html",
+		"/Users/paulreny/Development/GitHub/prose/app.css",
+		"/Users/paulreny/Development/GitHub/paultreny/firepad/codemirror/lib/codemirror.css",
+		"/Users/paulreny/Desktop/index.html",
+		"/Users/paulreny/Desktop/prose.js",
+		"/Users/paulreny/Development/GitHub/paultreny/firepad/Gruntfile.js",
+		"/Users/paulreny/Library/Application Support/Sublime Text 2/Packages/Path to File/PathToFileLanguages.py",
+		"/Users/paulreny/Library/Application Support/Sublime Text 2/Packages/Path to File/PathToFile.py",
+		"/Users/paulreny/Development/GitHub/prose/src/prose/views/start.js",
+		"/Users/paulreny/Development/GitHub/paultreny/firepad/.gitignore",
+		"/Users/paulreny/Library/Application Support/Sublime Text 2/Packages/Path to File/package-metadata.json",
+		"/Users/paulreny/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/paulreny/Library/Application Support/Sublime Text 2/Packages/Path to File/Default (OSX).sublime-keymap",
+		"/Users/paulreny/Library/Application Support/Brackets/extensions/disabled/beautify/package.json",
+		"/Users/paulreny/Development/GitHub/paultreny/firepad/examples/firepad-userlist.js",
+		"/Users/paulreny/Development/GitHub/paultreny/firepad/codemirror/theme/midnight.css",
+		"/Applications/Brackets Sprint 25.app/Contents/www/command/CommandManager.js",
+		"/Applications/Brackets Sprint 25.app/Contents/www/command/KeyBindingManager.js",
+		"/Users/paulreny/Desktop/applescript snippets.applescript",
+		"/Users/paulreny/Desktop/AppleScript snippets (from html).applescript",
+		"/Applications/Brackets Sprint 25.app/Contents/www/base-config/keyboard.json",
+		"/Applications/Brackets Sprint 25.app/Contents/www/brackets.config.json",
+		"/Applications/Brackets Sprint 25.app/Contents/www/config.json",
+		"/Applications/Brackets Sprint 25.app/Contents/www/extensions/default/JSHint/main.js",
+		"/Applications/Brackets Sprint 25.app/Contents/www/preferences/PreferencesManager.js",
+		"/Users/paulreny/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/paulreny/Library/Application Support/Brackets/extensions/user/brackets-beautify/settings.json",
+		"/Applications/Brackets Sprint 25.app/Contents/www/extensions/default/JSHint/config.js",
+		"/Applications/Brackets Sprint 25.app/Contents/www/extensions/default/JSHint/package.json",
+		"/Applications/Brackets Sprint 25.app/Contents/www/extensions/default/JSLint/config.json",
+		"/Applications/Brackets Sprint 25.app/Contents/www/extensions/default/JSLint/keyboard.json",
+		"/Users/paulreny/Library/Application Support/Brackets/extensions/user/InlineImageViewer/InlineImageViewer.js",
+		"/Users/paulreny/Library/Application Support/Brackets/extensions/user/StringConvert/package.json",
+		"/Users/paulreny/Library/Application Support/Brackets/extensions/user/StringConvert/main.js",
+		"/Users/paulreny/Downloads/Brandon-Grotesque-Expert-FontSquirrel-webfontkit-20130529-205526/generator_config.txt",
+		"/Users/paulreny/Downloads/Brandon_Grotesque_Basic_webfontkit-20130529-204223/generator_config.txt",
+		"/Users/paulreny/Downloads/Brandon_Grotesque_Optimized_webfontkit-20130529-204107/generator_config.txt",
+		"/Users/paulreny/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Users/paulreny/Development/GitHub/paultreny/firepad/cdia.html",
 		"/Users/paulreny/Development/GitHub/firepad/examples/firepad-userlist.js",
 		"/Users/paulreny/Development/GitHub/firepad/examples/code.html",
@@ -829,8 +977,6 @@
 		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/friends.php",
 		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/styles.css",
 		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/assets/css/grocerypower.css",
-		"/Users/paulreny/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/Users/paulreny/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
 		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/lpmj_examples/robinsnest/login.php",
 		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/assets/js/bootstrap.min.js",
 		"/Users/paulreny/Downloads/bootstrap (5)/js/bootstrap.min.js",
@@ -839,7 +985,6 @@
 		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/assets/js/bootstrap.js",
 		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/marketing-narrow.html",
 		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w18/grocerypower.txt",
-		"/Users/paulreny/.bash_profile",
 		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/blog/index.php",
 		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/blog/completed/index.php",
 		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/blog/completed/functions.php",
@@ -886,48 +1031,7 @@
 		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/login-action.php",
 		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/index.php",
 		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/functions.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/edit-action.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/edit.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/fixMagicQuotes.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/logout.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/post.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/posts.sql",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/register-action.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/PHP5 Deliverable.text",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/register.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/injection_attacks/functions.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/shopping_cart/style.css",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/DB dump.sql",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/_h5ai/server/php/index.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/forgotten_password/functions.php",
-		"/Applications/MAMP/logs/logstash-simple.conf",
-		"/Applications/MAMP/logs/apache-parse.conf",
-		"/Users/paulreny/Development/GitHub/logstash/pkg/build.sh",
-		"/Users/paulreny/Desktop/Chef Private User Key Opscode.txt",
-		"/Applications/MAMP/logs/php grok.conf",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/functions.php",
-		"/Applications/MAMP/logs/logstash-complex.conf",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/cross-site_scripting/index.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/cross-site_scripting/completed/index.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/forgotten_password/index.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/cross-site_scripting/completed/functions.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/cross-site_scripting/process-form.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/exercises/cross-site_scripting/functions.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/_h5ai/conf/options.json",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/shopping_cart/one-tab 13-05-19 11-35pm.txt",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/classes/Calendar.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/box/completed/<!DOCTYPE html>\n<html>\n<head>\n	<title>Fun with Boxes</title>\n</head>\n<body>\n<?php\n\nrequire 'Box.php';\n\n/ Create a red box at 50,50\necho new Box(50, 50, 'red');\n\n/ Create a green box at 150,150\necho new Box(150, 150, 'green');\n\n/ Create a blue box at 250,250\necho new Box(250, 250, 'blue');\n\n?>\n</body>\n</html>",
-		"/Users/paulreny/Desktop/Learning PHP, MySQL, JavaScript, & CSS - 2nd Edition Examples/10/example10-16.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/classes/ClearphpDiv.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/Forms.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/style.css",
-		"/Applications/MAMP/logs/php_error.log",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w13/Training/PHP/PHP4 - Object Oriented Programming/handouts/final_deliverable/event_planner.sql",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/classes/DynamicModel.php",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/HTMLTags.php",
-		"/Users/paulreny/Downloads/posts.sql",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/event_planner.sql",
-		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w16/PHP4 - Object Oriented Programming/handouts/final_deliverable/classes/UserLoginStatus_backup.php"
+		"/Users/paulreny/webdev/paul-reny.com/public_html/paulr/cdia/w17/PHP5/handouts/final_deliverable/edit-action.php"
 	],
 	"find":
 	{
@@ -964,6 +1068,50 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"^(.{76})(?:.{7})",
+			"^(.{38})(?:\\s{7})",
+			"prose-br",
+			"\"",
+			"ctrl-space",
+			"menu bar",
+			"menu",
+			"menu bar",
+			"window",
+			"recent",
+			"<blockquote>(.*)</blockquote>",
+			"^<blockquote>(.*)</blockquote>$",
+			"<blockquote>(.*?)</blockquote>",
+			"<(.*?)>(.*?)</.*?>",
+			"</?ul>",
+			"<li>(?<li>(.|\\s|\\r)*?)</li>",
+			"<li>(?:(.*)|(?:\\s|\\r)*?)</li>",
+			"<li>((.|\\s|\\r)*?)</li>",
+			"<li>([.\\s]*?)</li>",
+			"<li>(.*?)</li>",
+			"(<li>).*?</li>",
+			"(<ul>).*?</ul>",
+			"(?:<ul>)(.*?)(?:</ul>)",
+			"(?:<code>)(.*?)(?:</code>)",
+			"(?:<code>)(.*?)(?:</?code>)",
+			"(?:<code>)(.*?)(?:</code>)",
+			"(\\<code\\>)(.*?)(\\<\\/?code\\>)",
+			"<\\w*>(.*)</\\w>",
+			"\\s+<\\w*>(.*)</\\w>",
+			"\\s?<\\w*>(.*)</\\w>",
+			"<\\w*>(.*)</\\w*>",
+			"(?:(<\\w*>\\s))+(.*)(?:<\\/\\w*>)+",
+			"(?:<\\w*>\\s)+(.*)(?:<\\/\\w*>)+",
+			"(?:<\\w*>\\s)*(.*)(?:</\\w*>)*",
+			"<(?:\\w*)>(.*)<\\/(?:\\w*)>",
+			"<p>(.*)</p>",
+			"</code></pre>",
+			"<pre><code>",
+			"<pre><code>(.*)</code></pre>",
+			"(?:<pre><code>)(.*)(?:</code></pre>)",
+			"^(<h\\d>)(.*)(</h\\d>)$",
+			"cmd-g",
+			"cmd+g",
+			"spacing",
 			".css\" />",
 			".css\">",
 			"../theme",
@@ -1047,58 +1195,33 @@
 			"FFCC66",
 			"[^</]source[^>]",
 			"[^</]string[^>]",
-			"string",
-			"string<",
-			"quote",
-			"text",
-			"punc",
-			"text",
-			"[^<]quote[^>]",
-			"[^<]string[^>]",
-			"string",
-			"tag",
-			"F92672",
-			"tag",
-			"angle",
-			"string",
-			"quote",
-			"default",
-			"unmatched",
-			"guide",
-			"mysqli",
-			"caret",
-			"gutter",
-			"bgaline",
-			"bg",
-			"gu",
-			"gutter",
-			"%d",
-			"time_stamp",
-			"background",
-			"bg",
-			"background",
-			"today",
-			"mark",
-			"mysqli",
-			"sqli",
-			"bold",
-			"900",
-			"600",
-			"font-weight:300",
-			"600",
-			"300",
-			"font-weight:",
-			"font-weight:normal",
-			"\"Medium\"",
-			"bolder",
-			"variabl"
+			"string"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"$1",
+			"",
+			"$2",
+			"",
+			"\\t$1",
+			"\\t$li",
+			"\\n\\t--$1--\\n",
+			"--$1--",
+			"$1",
+			"$2",
+			"$1",
+			"--$1",
+			"\\n",
+			"$1",
+			"\\t$1",
+			"\\t$2",
+			"\\n-- $2 --",
+			"\\n\\n-- $2\\n",
+			"\\n -- $2",
 			".css\">",
 			".css\" />",
 			"codemirror/theme",
@@ -1174,23 +1297,36 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 13,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "/Users/paulreny/Desktop/exercises/todo/index.php",
 					"settings":
 					{
-						"buffer_size": 7320,
+						"buffer_size": 1019,
 						"regions":
 						{
+							"TagLint":
+							{
+								"flags": 52,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										658,
+										667
+									]
+								],
+								"scope": "variable.parameter"
+							}
 						},
 						"selection":
 						[
 							[
-								6520,
-								6520
+								92,
+								92
 							]
 						],
 						"settings":
@@ -1239,17 +1375,1031 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"buffer_scroll_name": "c2955050",
+							"buffer_scroll_name": "14a7fced",
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/paulreny/Desktop/18wk/functions.php",
+					"settings":
+					{
+						"buffer_size": 1159,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6,
+								6
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"buffer_scroll_name": "247edd6f",
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/paulreny/Desktop/18wk/products.php",
+					"settings":
+					{
+						"buffer_size": 5955,
+						"regions":
+						{
+							"TagLint":
+							{
+								"flags": 52,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										1556,
+										1570
+									]
+								],
+								"scope": "variable.parameter"
+							}
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"buffer_scroll_name": "91fb8d8f",
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 316.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/paulreny/Desktop/18wk/classes/User.php",
+					"settings":
+					{
+						"buffer_size": 228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"buffer_scroll_name": "94e1217f",
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/paulreny/Desktop/18wk/classes/DynamicModel.php",
+					"settings":
+					{
+						"buffer_size": 4466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								321,
+								321
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"buffer_scroll_name": "a079433c",
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/paulreny/Development/GitHub/CodeMirror/lib/codemirror.css",
+					"settings":
+					{
+						"buffer_size": 5827,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"buffer_scroll_name": "81fb55c4",
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/paulreny/Development/GitHub/CodeMirror/lib/codemirror.js",
+					"settings":
+					{
+						"buffer_size": 219606,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								776,
+								776
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"buffer_scroll_name": "0f3b8d57",
+							"encoding_helper_confidence": 0.835842700545,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/paulreny/Development/GitHub/temp-family-suite/app/index.php",
+					"settings":
+					{
+						"buffer_size": 642,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								528,
+								528
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"buffer_scroll_name": "7b53436a",
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/paulreny/Desktop/18wk/classes/UserLoginStatus.php",
+					"settings":
+					{
+						"buffer_size": 406,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"buffer_scroll_name": "b586d079",
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/paulreny/Desktop/18wk/index.php",
+					"settings":
+					{
+						"buffer_size": 5738,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"buffer_scroll_name": "aa2dacea",
+							"encoding_helper_confidence": 0.901016179486,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/Users/paulreny/Desktop/18wk/Forms.php",
+					"settings":
+					{
+						"buffer_size": 11151,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"buffer_scroll_name": "c04663d8",
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/Users/paulreny/Desktop/18wk/createUser.php",
+					"settings":
+					{
+						"buffer_size": 3493,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								238,
+								238
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"buffer_scroll_name": "24cacb20",
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/Users/paulreny/Desktop/18wk/classes/Category.php",
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"buffer_scroll_name": "0dab392e",
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"is_xml": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "h5bp-html5-index.html",
+					"settings":
+					{
+						"buffer_size": 1957,
+						"regions":
+						{
+							"TagLint":
+							{
+								"flags": 52,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										1361,
+										1363
+									]
+								],
+								"scope": "variable.parameter"
+							}
+						},
+						"selection":
+						[
+							[
+								1140,
+								1140
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"buffer_scroll_name": "aa8a7844",
 							"encoding_helper_confidence": 1.0,
 							"encoding_helper_encoding": "UTF-8",
 							"encoding_helper_encoding_sublime": "UTF-8",
 							"is_xml": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2139.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1357,6 +2507,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 245.0,
+	"side_bar_width": 171.0,
 	"status_bar_visible": true
 }
