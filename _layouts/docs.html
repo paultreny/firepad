@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Firepad - Documentation</title>
+
+  <link rel="stylesheet" href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/borland.css" />
+  <link href="../images/favicon.ico" rel="shortcut icon" />
+</head>
+
+<body class="docs-page">
+  <a href="https://github.com/firebase/firepad" target="_blank">
+    <img style="position: absolute; top: 0; left: 0; border: 0; z-index: 1;" src="../images/fork_on_github.png" alt="Fork me on GitHub">
+  </a>
+  <div id="top">
+    <div id="top-shadow"></div>
+    <div id="top-bg-tile">
+      <div id="fork-on-github"></div>
+      <div id="top-content">
+        <div id="header-links" class="clearfix">
+          <a href="../">Home</a>
+          <a href="../examples/">Examples</a>
+          <a href="#" class="selected">Documentation</a>
+          <a href="http://demo.firepad.io/" target="_blank" class="private-firepad"></a>
+        </div>
+        <a href="../">
+          <div id="logo-small"></div>
+        </a>
+        <div id="page-title">Documentation</div>
+        <a href="https://github.com/firebase/firepad" id="download-on-github" target="_blank"><img src="../images/download.png"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="docs-container">
+    <div class="row">
+      <div class="span3 sidebar">
+        <ul class="nav nav-list sidenav" data-spy="affix" data-offset-top="150">
+          <li><a href="#getting_started"><i class="icon-chevron-right"></i> Getting Started</a></li>
+          <li><a href="#api"><i class="icon-chevron-right"></i> API</a></li>
+          <li><a href="#firebase"><i class="icon-chevron-right"></i> Firebase Data</a></li>
+          <li><a href="#extending"><i class="icon-chevron-right"></i> Extending</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+        {{ content }}
+        <div class="build-something">Build something cool using Firepad?  We'd
+          love to <a href="mailto:firepad@firebase.com?subject=[Firepad]">hear from you</a>!
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-wrap">
+    <div id="footer">
+      <div id="footer-links">
+        <a href="../">Home</a>
+        <a href="../examples/">Examples</a>
+        <a href="https://github.com/firebase/firepad" target="_blank">GitHub Project</a>
+        <a href="mailto:firepad@firebase.com?subject=[Firepad Question]" target="_blank">Contact</a>
+      </div>
+      <div id="powered-by-firebase">
+        <a href="https://www.firebase.com/"><img src="../images/powered-by-firebase-dim.png"></a>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39969708-1']);
+    _gaq.push(['_setDomainName', 'firepad.io']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script src="../js/bootstrap-affix.js"></script>
+</body>
+</html>

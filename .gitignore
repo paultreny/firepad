@@ -1,5 +1,13 @@
 .idea
 *.iml
+<<<<<<< HEAD
 #node_modules
 #build
 *.sw?
+=======
+*sw?
+node_modules
+
+# Jekyll stuff.
+_site
+>>>>>>> 70ca7a2c1fcfdfbbd39abb0b182f6e418a001acd

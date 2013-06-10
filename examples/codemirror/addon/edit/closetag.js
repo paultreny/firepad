@@ -55,7 +55,12 @@
       if (tok.end > pos.ch) tagName = tagName.slice(0, tagName.length - tok.end + pos.ch);
       var lowerTagName = tagName.toLowerCase();
       // Don't process the '>' at the end of an end-tag or self-closing tag
+<<<<<<< HEAD
       if (tok.type == "tag" && state.type == "closeTag" || tok.string.indexOf("/") > -1 ||
+=======
+      if (tok.type == "tag" && state.type == "closeTag" ||
+          tok.string.indexOf("/") == (tok.string.length - 1) || // match something like <someTagName />
+>>>>>>> 70ca7a2c1fcfdfbbd39abb0b182f6e418a001acd
           dontCloseTags && indexOf(dontCloseTags, lowerTagName) > -1)
         return CodeMirror.Pass;
 

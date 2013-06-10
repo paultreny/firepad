@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Visit [firepad.io](http://www.firepad.io/) for demo, examples, and embedding docs!
 Read on if you'd like to contribute to Firepad.
 
@@ -29,3 +30,19 @@ To get started, here are some highlights of the directory structure and notable 
     * `firebase-adapter.js` - handles integration with Firebase (appending operations, triggering retries,
       presence, etc.).
 * `test/` - Jasmine tests for Firepad (many of these were borrowed from ot.js).
+=======
+# Firepad website.
+
+To generate the docs, you'll need jekyll.
+
+    sudo gem install jekyll -v 0.12.0
+    sudo gem install liquid -v 2.4.1
+    sudo gem install redcarpet -v 2.1.1
+    sudo gem install maruku -v 0.6.0
+    sudo gem install rdiscount -v 1.6.8
+    sudo gem install RedCloth -v 4.2.9
+
+Then you can run: jekyll --server --auto
+
+And browse the site at http://localhost:4000/
+>>>>>>> 70ca7a2c1fcfdfbbd39abb0b182f6e418a001acd

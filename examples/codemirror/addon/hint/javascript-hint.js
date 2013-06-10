@@ -4,7 +4,11 @@
   function forEach(arr, f) {
     for (var i = 0, e = arr.length; i < e; ++i) f(arr[i]);
   }
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 70ca7a2c1fcfdfbbd39abb0b182f6e418a001acd
   function arrayContains(arr, item) {
     if (!Array.prototype.indexOf) {
       var i = arr.length;
@@ -21,8 +25,15 @@
   function scriptHint(editor, keywords, getToken, options) {
     // Find the token at the cursor
     var cur = editor.getCursor(), token = getToken(editor, cur), tprop = token;
+<<<<<<< HEAD
     // If it's not a 'word-style' token, ignore the token.
 		if (!/^[\w$_]*$/.test(token.string)) {
+=======
+    token.state = CodeMirror.innerMode(editor.getMode(), token.state).state;
+
+    // If it's not a 'word-style' token, ignore the token.
+    if (!/^[\w$_]*$/.test(token.string)) {
+>>>>>>> 70ca7a2c1fcfdfbbd39abb0b182f6e418a001acd
       token = tprop = {start: cur.ch, end: cur.ch, string: "", state: token.state,
                        type: token.string == "." ? "property" : null};
     }
@@ -42,9 +53,15 @@
           }
         } while (level > 0);
         tprop = getToken(editor, Pos(cur.line, tprop.start));
+<<<<<<< HEAD
 	if (tprop.type.indexOf("variable") === 0)
 	  tprop.type = "function";
 	else return; // no clue
+=======
+        if (tprop.type.indexOf("variable") === 0)
+          tprop.type = "function";
+        else return; // no clue
+>>>>>>> 70ca7a2c1fcfdfbbd39abb0b182f6e418a001acd
       }
       if (!context) var context = [];
       context.push(tprop);
