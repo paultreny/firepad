@@ -1,17 +1,5 @@
 (function() {
   var DEFAULT_BRACKETS = "()[]{}''\"\"";
-<<<<<<< HEAD
-  var SPACE_CHAR_REGEX = /\s/;
-
-  CodeMirror.defineOption("autoCloseBrackets", false, function(cm, val, old) {
-    var wasOn = old && old != CodeMirror.Init;
-    if (val && !wasOn)
-      cm.addKeyMap(buildKeymap(typeof val == "string" ? val : DEFAULT_BRACKETS));
-    else if (!val && wasOn)
-      cm.removeKeyMap("autoCloseBrackets");
-  });
-
-=======
   var DEFAULT_EXPLODE_ON_ENTER = "[]{}";
   var SPACE_CHAR_REGEX = /\s/;
 
@@ -36,40 +24,24 @@
     return str.length == 2 ? str : null;
   }
 
->>>>>>> 70ca7a2c1fcfdfbbd39abb0b182f6e418a001acd
   function buildKeymap(pairs) {
     var map = {
       name : "autoCloseBrackets",
       Backspace: function(cm) {
         if (cm.somethingSelected()) return CodeMirror.Pass;
-<<<<<<< HEAD
-        var cur = cm.getCursor(), line = cm.getLine(cur.line);
-        if (cur.ch && cur.ch < line.length &&
-            pairs.indexOf(line.slice(cur.ch - 1, cur.ch + 1)) % 2 == 0)
-=======
         var cur = cm.getCursor(), around = charsAround(cm, cur);
         if (around && pairs.indexOf(around) % 2 == 0)
->>>>>>> 70ca7a2c1fcfdfbbd39abb0b182f6e418a001acd
           cm.replaceRange("", CodeMirror.Pos(cur.line, cur.ch - 1), CodeMirror.Pos(cur.line, cur.ch + 1));
         else
           return CodeMirror.Pass;
       }
     };
-<<<<<<< HEAD
-    var closingBrackets = [];
-    for (var i = 0; i < pairs.length; i += 2) (function(left, right) {
-      if (left != right) closingBrackets.push(right);
-      function surround(cm) {
-          var selection = cm.getSelection();
-          cm.replaceSelection(left + selection + right);
-=======
     var closingBrackets = "";
     for (var i = 0; i < pairs.length; i += 2) (function(left, right) {
       if (left != right) closingBrackets += right;
       function surround(cm) {
         var selection = cm.getSelection();
         cm.replaceSelection(left + selection + right);
->>>>>>> 70ca7a2c1fcfdfbbd39abb0b182f6e418a001acd
       }
       function maybeOverwrite(cm) {
         var cur = cm.getCursor(), ahead = cm.getRange(cur, CodeMirror.Pos(cur.line, cur.ch + 1));
@@ -77,11 +49,8 @@
         else cm.execCommand("goCharRight");
       }
       map["'" + left + "'"] = function(cm) {
-<<<<<<< HEAD
-=======
         if (left == "'" && cm.getTokenAt(cm.getCursor()).type == "comment")
           return CodeMirror.Pass;
->>>>>>> 70ca7a2c1fcfdfbbd39abb0b182f6e418a001acd
         if (cm.somethingSelected()) return surround(cm);
         if (left == right && maybeOverwrite(cm) != CodeMirror.Pass) return;
         var cur = cm.getCursor(), ahead = CodeMirror.Pos(cur.line, cur.ch + 1);
@@ -95,8 +64,6 @@
     })(pairs.charAt(i), pairs.charAt(i + 1));
     return map;
   }
-<<<<<<< HEAD
-=======
 
   function buildExplodeHandler(pairs) {
     return function(cm) {
@@ -110,5 +77,4 @@
       });
     };
   }
->>>>>>> 70ca7a2c1fcfdfbbd39abb0b182f6e418a001acd
 })();

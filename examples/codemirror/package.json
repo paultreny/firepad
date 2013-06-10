@@ -1,10 +1,6 @@
 {
     "name": "codemirror",
-<<<<<<< HEAD
-    "version":"3.10.01",
-=======
     "version":"3.13.01",
->>>>>>> 70ca7a2c1fcfdfbbd39abb0b182f6e418a001acd
     "main": "lib/codemirror.js",
     "description": "In-browser code editing made bearable",
     "licenses": [{"type": "MIT",
@@ -18,13 +14,6 @@
     "maintainers":[{"name": "Marijn Haverbeke",
                     "email": "marijnh@gmail.com",
                     "web": "http://marijnhaverbeke.nl"}],
-<<<<<<< HEAD
-    "repositories": [{"type": "git",
-                      "url": "http://marijnhaverbeke.nl/git/codemirror"},
-                     {"type": "git",
-                      "url": "https://github.com/marijnh/CodeMirror.git"}]
-=======
     "repository": {"type": "git",
                    "url": "http://marijnhaverbeke.nl/git/codemirror"}
->>>>>>> 70ca7a2c1fcfdfbbd39abb0b182f6e418a001acd
 }
