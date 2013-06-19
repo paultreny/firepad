@@ -2190,8 +2190,8 @@ firepad.EditorClient = (function () {
 
   SelfMeta.prototype.transform = function (operation) {
     return new SelfMeta(
-      this.cursorBefore.transform(operation),
-      this.cursorAfter.transform(operation)
+      this.cursorBefore ? this.cursorBefore.transform(operation) : null,
+      this.cursorAfter ? this.cursorAfter.transform(operation) : null
     );
   };
 
@@ -2521,8 +2521,7 @@ firepad.RichTextCodeMirror = (function () {
     var start = cm.getCursor('start'), end = cm.getCursor('end');
     var startLine = start.line, endLine = end.line;
     var endLineText = cm.getLine(endLine);
-    var endsAtBeginningOfLine = end.ch === 0 ||
-        (end.ch === 1 && endLineText.length > 0 && endLineText[0] === LineSentinelCharacter);
+    var endsAtBeginningOfLine = this.areLineSentinelCharacters_(endLineText.substr(0, end.ch));
     if (endLine > startLine && endsAtBeginningOfLine) {
       // If the selection ends at the beginning of a line, don't include that line.
       endLine--;
@@ -2614,27 +2613,12 @@ firepad.RichTextCodeMirror = (function () {
 
     for (i = 0; i < newNodes.length; i++) {
       var annotation = newNodes[i].annotation;
-      var className='', forLine = false;
-      for(var attr in annotation.attributes) {
-        var val = annotation.attributes[attr];
-        if (attr === ATTR.LINE_SENTINEL) {
-          firepad.utils.assert(val === true, "LINE_SENTINEL attribute should be true if it exists.");
-          forLine = true;
-        } else {
-          className += ' ' + (this.options_['cssPrefix'] || RichTextClassPrefixDefault) + attr;
-          if (val !== true) {
-            val = val.toString().toLowerCase().replace(/[^a-z0-9-_]/g, '-');
-            className += '-' + val;
-          }
-        }
-      }
+      var className = this.getClassNameForAttributes_(annotation.attributes);
+      var forLine = (ATTR.LINE_SENTINEL in annotation.attributes);
 
       if (className !== '') {
         var from = this.codeMirror.posFromIndex(newNodes[i].pos);
         if (forLine) {
-          this.codeMirror.addLineClass(from.line, "text", className);
-          newNodes[i].attachObject(this.lineClassRemover_(from.line));
-
           linesToReMark[from.line] = true;
         } else {
           var to = this.codeMirror.posFromIndex(newNodes[i].pos + newNodes[i].length);
@@ -2645,13 +2629,31 @@ firepad.RichTextCodeMirror = (function () {
     }
 
     for(var line in linesToReMark) {
-      // HACK: Make sure annotation list is fully in sync with codemirror changes.
-      (function(self, line) {
+      // HACK: Wait for annotation list to be fully in sync with codemirror changes before marking line sentinels.
+      (function(self, lineHandle) {
         setTimeout(function() {
-          self.markLineSentinelCharactersForChangedLines_(line, line);
+          var lineNum = self.codeMirror.getLineNumber(lineHandle);
+          self.markLineSentinelCharactersForChangedLines_(lineNum, lineNum);
         }, 0);
-      })(this, Number(line));
+      })(this, this.codeMirror.getLineHandle(Number(line)));
     }
+  };
+
+  RichTextCodeMirror.prototype.getClassNameForAttributes_ = function(attributes) {
+    var className = '';
+    for(var attr in attributes) {
+      var val = attributes[attr];
+      if (attr === ATTR.LINE_SENTINEL) {
+        firepad.utils.assert(val === true, "LINE_SENTINEL attribute should be true if it exists.");
+      } else {
+        className += ' ' + (this.options_['cssPrefix'] || RichTextClassPrefixDefault) + attr;
+        if (val !== true) {
+          val = val.toString().toLowerCase().replace(/[^a-z0-9-_]/g, '-');
+          className += '-' + val;
+        }
+      }
+    }
+    return className;
   };
 
   RichTextCodeMirror.prototype.lineClassRemover_ = function(lineNum) {
@@ -2724,6 +2726,12 @@ firepad.RichTextCodeMirror = (function () {
     }
   };
 
+  /**
+   * Detects whether any line sentinel characters were added or removed by the change and if so,
+   * re-marks line sentinel characters on the affected range of lines.
+   * @param changes
+   * @private
+   */
   RichTextCodeMirror.prototype.markLineSentinelCharactersForChanges_ = function(changes) {
     var startLine = Number.MAX_VALUE, endLine = -1;
 
@@ -2771,42 +2779,69 @@ firepad.RichTextCodeMirror = (function () {
     var cm = this.codeMirror;
     for(var line = startLine; line <= endLine; line++) {
       var text = cm.getLine(line);
-      if (text.length > 0 && text[0] === LineSentinelCharacter) {
-        // Remove existing mark.
-        var marks = cm.findMarksAt({ line: line, ch: 0 });
-        for(var i = 0; i < marks.length; i++) {
-          var where = marks[i].find();
-          if (where.from.line === line && where.from.ch === 0 && where.to.line === line && where.to.ch === 1) {
-            marks[i].clear();
+
+      // Remove any existing line classes.
+      var lineHandle = cm.getLineHandle(line);
+      cm.removeLineClass(lineHandle, "text", ".*");
+
+      if (text.length > 0) {
+        var markIndex = text.indexOf(LineSentinelCharacter);
+        while (markIndex >= 0) {
+          var markStartIndex = markIndex;
+
+          // Find the end of this series of sentinel characters, and remove any existing markers.
+          while (markIndex < text.length && text[markIndex] === LineSentinelCharacter) {
+            var marks = cm.findMarksAt({ line: line, ch: markIndex });
+            for(var i = 0; i < marks.length; i++) {
+              if (marks[i].isForLineSentinel) {
+                marks[i].clear();
+              }
+            }
+
+            markIndex++;
           }
-        }
 
-        // Create new mark with appropriate contents.
-        var attributes = this.getLineAttributes_(line);
-        var element = null;
-        var listType = attributes[ATTR.LIST_TYPE];
-        var indent = attributes[ATTR.LINE_INDENT] || 0;
-        if (listType && indent === 0) { indent = 1; }
-        if (indent >= listNumber.length) indent = listNumber.length - 1; // we don't support deeper indents.
-        if (listType === 'o') {
-          element = this.makeOrderedListElement_(listNumber[indent]);
-          listNumber[indent]++;
-        } else if (listType === 'u') {
-          element = this.makeUnorderedListElement_();
-          listNumber[indent] = 1;
-        }
+          // If the mark is at the beginning of the line and it represents a list element, we need to replace it with
+          // the appropriate html element for the list heading.
+          var element = null;
+          if (markStartIndex === 0) {
+            var attributes = this.getLineAttributes_(line);
+            var listType = attributes[ATTR.LIST_TYPE];
+            var indent = attributes[ATTR.LINE_INDENT] || 0;
+            if (listType && indent === 0) { indent = 1; }
+            if (indent >= listNumber.length) indent = listNumber.length - 1; // we don't support deeper indents.
+            if (listType === 'o') {
+              element = this.makeOrderedListElement_(listNumber[indent]);
+              listNumber[indent]++;
+            } else if (listType === 'u') {
+              element = this.makeUnorderedListElement_();
+              listNumber[indent] = 1;
+            }
 
-        // Reset deeper indents.
-        for(i = indent+1; i < listNumber.length; i++) {
-          listNumber[i] = 1;
-        }
+            var className = this.getClassNameForAttributes_(attributes);
+            if (className !== '') {
+              this.codeMirror.addLineClass(line, "text", className);
+            }
 
-        var markerOptions = { inclusiveLeft: true, collapsed: true };
-        if (element) {
-          markerOptions.replacedWith = element;
-        }
+            // Reset deeper indents back to 1.
+            for(i = indent+1; i < listNumber.length; i++) {
+              listNumber[i] = 1;
+            }
+          }
 
-        cm.markText({line: line, ch: 0 }, { line: line, ch: 1}, markerOptions);
+          // Create a marker to cover this series of sentinel characters.
+          // NOTE: The reason we treat them as a group (one marker for all subsequent sentinel characters instead of
+          // one marker for each sentinel character) is that CodeMirror seems to get angry if we don't.
+          var markerOptions = { inclusiveLeft: true, collapsed: true };
+          if (element) {
+            markerOptions.replacedWith = element;
+          }
+          var marker = cm.markText({line: line, ch: markStartIndex }, { line: line, ch: markIndex }, markerOptions);
+          // track that it's a line-sentinel character so we can identify it later.
+          marker.isForLineSentinel = true;
+
+          markIndex = text.indexOf(LineSentinelCharacter, markIndex);
+        }
       } else {
         // Reset all indents.
         for(i = 0; i < listNumber.length; i++) {
@@ -2856,10 +2891,17 @@ firepad.RichTextCodeMirror = (function () {
     }
     var spans = this.annotationList_.getAnnotatedSpansForPos(pos);
     this.currentAttributes_ = {};
-    if (spans.length > 0) {
-      for(var attr in spans[0].annotation.attributes) {
-        this.currentAttributes_[attr] = spans[0].annotation.attributes[attr];
-      }
+
+    var attributes = {};
+    // Use the attributes to the left unless they're line attributes (in which case use the ones to the right.
+    if (spans.length > 0 && (!(ATTR.LINE_SENTINEL in spans[0].annotation.attributes))) {
+      attributes = spans[0].annotation.attributes;
+    } else if (spans.length > 1) {
+      firepad.utils.assert(!(ATTR.LINE_SENTINEL in spans[1].annotation.attributes), "Cursor can't be between two line sentinel characters.");
+      attributes = spans[1].annotation.attributes;
+    }
+    for(var attr in attributes) {
+      this.currentAttributes_[attr] = attributes[attr];
     }
 
     // HACK.
@@ -2957,10 +2999,10 @@ firepad.RichTextCodeMirror = (function () {
     var cursorPos = cm.getCursor('head');
 
     var text = cm.getLine(cursorPos.line);
-    var emptyLine = (text.length === 0) || (text.length === 1 && text[0] === LineSentinelCharacter);
+    var emptyLine = this.areLineSentinelCharacters_(text);
     var nextLineText = (cursorPos.line + 1 < cm.lineCount()) ? cm.getLine(cursorPos.line + 1) : "";
     if (this.emptySelection_() && emptyLine && nextLineText[0] === LineSentinelCharacter) {
-      // Delete the newline but not the line sentinel character on the next line.
+      // Delete the empty line but not the line sentinel character on the next line.
       cm.replaceRange('', { line: cursorPos.line, ch: 0 }, { line: cursorPos.line + 1, ch: 0}, '+input');
     } else {
       cm.deleteH(1, "char");
@@ -3002,6 +3044,14 @@ firepad.RichTextCodeMirror = (function () {
 
   RichTextCodeMirror.prototype.getText = function() {
     return this.codeMirror.getValue().replace(new RegExp(LineSentinelCharacter, "g"), '');
+  };
+
+  RichTextCodeMirror.prototype.areLineSentinelCharacters_ = function(text) {
+    for(var i = 0; i < text.length; i++) {
+      if (text[i] !== LineSentinelCharacter)
+        return false;
+    }
+    return true;
   };
 
   /**
@@ -3526,6 +3576,12 @@ firepad.LineFormatting = (function() {
     this.attributes[ATTR.LINE_SENTINEL] = true;
   }
 
+  LineFormatting.LIST_TYPE = {
+    NONE: false,
+    ORDERED: 'o',
+    UNORDERED: 'u'
+  };
+
   LineFormatting.prototype.cloneWithNewAttribute_ = function(attribute, value) {
     var attributes = { };
 
@@ -3548,14 +3604,17 @@ firepad.LineFormatting = (function() {
     return this.cloneWithNewAttribute_(ATTR.LINE_INDENT, indent);
   };
 
-  LineFormatting.prototype.orderedListItem = function(val) {
-    var listType = (val === true) ? 'o': false;
-    return this.cloneWithNewAttribute_(ATTR.LIST_TYPE, listType);
+  LineFormatting.prototype.listItem = function(val) {
+    firepad.utils.assert(val === false || val === 'u' || val === 'o');
+    return this.cloneWithNewAttribute_(ATTR.LIST_TYPE, val);
   };
 
-  LineFormatting.prototype.unorderedListItem = function(val) {
-    var listType = (val === true) ? 'u': false;
-    return this.cloneWithNewAttribute_(ATTR.LIST_TYPE, listType);
+  LineFormatting.prototype.getIndent = function() {
+    return this.attributes[ATTR.LINE_INDENT] || 0;
+  };
+
+  LineFormatting.prototype.getListItem = function() {
+    return this.attributes[ATTR.LIST_TYPE] || false;
   };
 
   return LineFormatting;
@@ -3585,6 +3644,228 @@ firepad.Line = (function() {
   }
 
   return Line;
+})();
+var firepad = firepad || { };
+
+/**
+ * Helper to parse html into Firepad-compatible lines / text.
+ * @type {*}
+ */
+firepad.ParseHtml = (function () {
+  var LIST_TYPE = firepad.LineFormatting.LIST_TYPE;
+
+  /**
+   * Represents the current parse state as an immutable structure.  To create a new ParseState, use
+   * the withXXX methods.
+   *
+   * @param opt_listType
+   * @param opt_lineFormatting
+   * @param opt_textFormatting
+   * @constructor
+   */
+  function ParseState(opt_listType, opt_lineFormatting, opt_textFormatting) {
+    this.listType = opt_listType || LIST_TYPE.UNORDERED;
+    this.lineFormatting = opt_lineFormatting || firepad.LineFormatting();
+    this.textFormatting = opt_textFormatting || firepad.Formatting();
+  }
+
+  ParseState.prototype.withTextFormatting = function(textFormatting) {
+    return new ParseState(this.listType, this.lineFormatting, textFormatting);
+  };
+
+  ParseState.prototype.withLineFormatting = function(lineFormatting) {
+    return new ParseState(this.listType, lineFormatting, this.textFormatting);
+  };
+
+  ParseState.prototype.withListType = function(listType) {
+    return new ParseState(listType, this.lineFormatting, this.textFormatting);
+  };
+
+  ParseState.prototype.withIncreasedIndent = function() {
+    var lineFormatting = this.lineFormatting.indent(this.lineFormatting.getIndent() + 1);
+    return new ParseState(this.listType, lineFormatting, this.textFormatting);
+  };
+
+  /**
+   * Mutable structure representing the current parse output.
+   * @constructor
+   */
+  function ParseOutput() {
+    this.lines = [ ];
+    this.currentLineFormatting = firepad.LineFormatting();
+    this.currentLine = [];
+  }
+
+  ParseOutput.prototype.newlineIfNonEmpty = function(newLineFormatting) {
+    if (this.currentLine.length > 0) {
+      this.newline(newLineFormatting);
+    }
+  };
+
+  ParseOutput.prototype.newline = function(newLineFormatting) {
+    this.lines.push(firepad.Line(this.currentLine, this.currentLineFormatting));
+    this.currentLine = [];
+    this.currentLineFormatting = newLineFormatting;
+  };
+
+  function parseHtml(html) {
+    // Create DIV with HTML (as a convenient way to parse it).
+    var div = document.createElement('div');
+    div.innerHTML = html;
+
+    var output = new ParseOutput();
+    var state = new ParseState();
+    parseNode(div, state, output);
+
+    return output.lines;
+  }
+
+  function parseNode(node, state, output) {
+    switch (node.nodeType) {
+      case Node.TEXT_NODE:
+        var text = node.nodeValue.replace(/\s+/g, ' '); // Not sure this is 100% right, but mostly works.
+        output.currentLine.push(firepad.Text(text, state.textFormatting));
+        break;
+      case Node.ELEMENT_NODE:
+        var style = node.getAttribute('style') || '';
+        state = state.withTextFormatting(parseStyle(state.textFormatting, style));
+        switch (node.nodeName.toLowerCase()) {
+          case 'div':
+          case 'h1':
+          case 'h2':
+          case 'h3':
+          case 'p':
+            output.newlineIfNonEmpty(state.lineFormatting);
+            parseChildren(node, state, output);
+            output.newlineIfNonEmpty(state.lineFormatting);
+            break;
+          case 'b':
+          case 'strong':
+            parseChildren(node, state.withTextFormatting(state.textFormatting.bold(true)), output);
+            break;
+          case 'u':
+            parseChildren(node, state.withTextFormatting(state.textFormatting.underline(true)), output);
+            break;
+          case 'i':
+          case 'em':
+            parseChildren(node, state.withTextFormatting(state.textFormatting.italic(true)), output);
+            break;
+          case 'br':
+            output.newline(state.lineFormatting);
+            break;
+          case 'ul':
+            parseChildren(node, state.withListType(LIST_TYPE.UNORDERED), output);
+            break;
+          case 'ol':
+            parseChildren(node, state.withListType(LIST_TYPE.ORDERED), output);
+            break;
+          case 'li':
+            parseListItem(node, state, output);
+            break;
+          default:
+            parseChildren(node, state, output);
+            break;
+        }
+        break;
+      default:
+        // Ignore other nodes (comments, etc.)
+        break;
+    }
+  }
+
+  function parseChildren(node, state, output) {
+    if (node.hasChildNodes()) {
+      for(var i = 0; i < node.childNodes.length; i++) {
+        parseNode(node.childNodes[i], state, output);
+      }
+    }
+  }
+
+  function parseListItem(node, state, output) {
+    // Note: <li> is weird:
+    // * The increased indent applies to all lines within the <li> tag.
+    // * But only the first line in the <li> tag should be a list item (i.e. with a bullet or number next to it).
+    // * <li></li> should create an empty list item line; <li><ol><li></li></ol></li> should create two.
+
+    var liState = state.withIncreasedIndent();
+
+    // If the current line is non-empty or already a list item, create a new line.
+    if (output.currentLine.length > 0 || output.currentLineFormatting.getListItem() !== false) {
+      output.newline();
+    }
+    output.currentLineFormatting = liState.lineFormatting.listItem(state.listType);
+
+    var oldLine = output.currentLine;
+
+    parseChildren(node, liState, output);
+
+    if (oldLine === output.currentLine || output.currentLine.length > 0) {
+      output.newline(state.lineFormatting);
+    }
+  }
+
+  function parseStyle(formatting, styleString) {
+    var styles = styleString.split(';');
+    for(var i = 0; i < styles.length; i++) {
+      var stylePieces = styles[i].split(':');
+      if (stylePieces.length !== 2)
+        continue;
+      var prop = stylePieces[0].trim().toLowerCase();
+      var val = stylePieces[1].trim();
+      switch (prop) {
+        case 'text-decoration':
+          var underline = val.indexOf('underline') >= 0;
+          formatting = formatting.underline(underline);
+          break;
+        case 'font-weight':
+          var bold = (val === 'bold') || parseInt(val) >= 600;
+          formatting = formatting.bold(bold);
+          break;
+        case 'font-style':
+          var italic = (val === 'italic' || val === 'oblique');
+          formatting = formatting.italic(italic);
+          break;
+        case 'color':
+          formatting = formatting.color(val.toLowerCase());
+          break;
+        case 'font-size':
+          switch (val) {
+            case 'xx-small':
+              formatting = formatting.fontSize(9);
+              break;
+            case 'x-small':
+              formatting = formatting.fontSize(10);
+              break;
+            case 'small':
+              formatting = formatting.fontSize(12);
+              break;
+            case 'medium':
+              formatting = formatting.fontSize(14);
+              break;
+            case 'large':
+              formatting = formatting.fontSize(18);
+              break;
+            case 'x-large':
+              formatting = formatting.fontSize(24);
+              break;
+            case 'xx-large':
+              formatting = formatting.fontSize(32);
+              break;
+            default:
+              formatting = formatting.fontSize(parseInt(val));
+          }
+          break;
+        case 'font-family':
+          var font = val.split(',')[0].trim(); // get first font.
+          font = font.replace(/['"]/g, ''); // remove quotes.
+          formatting = formatting.font(font);
+          break;
+      }
+    }
+    return formatting;
+  }
+
+  return parseHtml;
 })();
 var firepad = firepad || { };
 
@@ -3789,7 +4070,8 @@ firepad.Firepad = (function(global) {
   };
 
   Firepad.prototype.setHtml = function (html) {
-    throw new Error('Not implemented yet.  Sorry!');
+    var lines = firepad.ParseHtml(html);
+    this.setText(lines);
   };
 
   Firepad.prototype.isHistoryEmpty = function() {
