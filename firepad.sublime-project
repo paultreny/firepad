@@ -4,5 +4,12 @@
 		{
 			"path": "/Users/paulreny/Development/GitHub/paultreny/firepad"
 		}
-	]
+	],
+  "settings":
+  {
+    "sublime-view-in-browser":
+    {
+      "baseUrl": "http://paulr.dev:80", "basePath": "/Users/paulreny/webdev/paul-reny.com/public_html"
+    }
+  }
 }

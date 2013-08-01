@@ -57,6 +57,10 @@
   <!-- Helper for generating URLs / Firebase references for example purposes.
        Not necessary in production apps. -->
   <!-- <script src="example-helper.js"></script> -->
+  <script> window.onload = function() {
+    document.body.insertAdjacentHTML("afterbegin",
+  "<pre style='position:absolute; top:-18px; left:0;font-size:11px;background-color:#def;margin:0;padding:2px 3px;'><code>"
+  + navigator.userAgent + "<br /></code></pre>"); }; </script>
   <style>
 	html { height: 100%; }
 	body { margin: 30px auto auto; height: 90%; width: 90%; position: relative; }
@@ -74,6 +78,21 @@
 	  font-family: "Helvetica Neue", Helvetica, sans-serif;
 	  font-weight: 400; font-size: 12px;
 	}
+  input.firepad-userlist-name-input {
+    padding: 2px 0; border-bottom: none !important;
+    font-size: 13px;
+    background-color: rgba(255,255,255,0) !important;
+    /* [@id="userlist"]/div/div[2]/div[1]/div[2]/input */
+  }
+  input.firepad-userlist-name-input:hover {
+    background-color: rgba(255,255,255,0.5) !important;
+    /* [@id="userlist"]/div/div[2]/div[1]/div[2]/input */
+  }
+  input.firepad-userlist-name-input:focus,
+  input.firepad-userlist-name-input:active {
+    background-color: rgb(255,255,255) !important;
+    /* [@id="userlist"]/div/div[2]/div[1]/div[2]/input */
+  }
   </style>
 </head>
 <body>
@@ -182,8 +201,9 @@
 
     firepad.on('ready', function() {
       if (firepad.isHistoryEmpty() === true) {
-        firepad.setText('CDIA Firepad (Work in Progress)');
+        firepad.setText("CDIA Firepad (Work in Progress)");
       }
+      // firepad.setText(navigator.userAgent +"\n\n" + firepad.getText());
     });
   </script>
  <!--
